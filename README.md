@@ -5,6 +5,10 @@
 
 sc OIer 高翊宸
 
+洛谷账号 https://www.luogu.com.cn/user/554698
+
+我的网站 https://www.zigao.info/
+
 ## 获奖记录
 
 [2022] CSP提高 二等奖 176pts
