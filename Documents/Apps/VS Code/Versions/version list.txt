@@ -1,0 +1,6 @@
+https://update.code.visualstudio.com/{version}/win32-x64/stable
+https://update.code.visualstudio.com/{version}/win32-x64-user/stable
+https://update.code.visualstudio.com/{version}/win32-x64-archive/stable
+https://update.code.visualstudio.com/{version}/win32/stable
+https://update.code.visualstudio.com/{version}/win32-user/stable
+https://update.code.visualstudio.com/{version}/win32-archive/stable
