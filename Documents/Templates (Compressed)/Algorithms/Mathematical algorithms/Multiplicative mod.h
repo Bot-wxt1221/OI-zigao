@@ -1,0 +1,3 @@
+#include<algorithm>
+#define MUL_TYPE unsigned long long
+MUL_TYPE mul1(MUL_TYPE x,MUL_TYPE y,MUL_TYPE p){MUL_TYPE z=(long double)x/p*y;MUL_TYPE res=(unsigned long long)x*y-(unsigned long long)z*p;return(res+p)%p;}MUL_TYPE mul2(MUL_TYPE x,MUL_TYPE y,MUL_TYPE p){return((__int128)x*y)%p;}MUL_TYPE mul3(MUL_TYPE a,MUL_TYPE b,MUL_TYPE MOD){if(a==0ull)return 0ull;if(a>b)std::swap(a,b);unsigned long long x=mul3(a/10,b,MOD);x*=10ull;x%=MOD;x=(x+b*(a%10))%MOD;return x;}MUL_TYPE mul4(MUL_TYPE x,MUL_TYPE y,MUL_TYPE p){MUL_TYPE res=0;while(y){if(y&1)res=(res+x)%p;x=(x<<1)%p;y>>=1;}return res;}

@@ -1,0 +1,4 @@
+#include<cstring>
+#include<complex>
+#define POL_SIZE (4000000+10)
+const double pi=acos(-1);struct POL{int rev[POL_SIZE],len,FFTlen;char isFFT;std::complex<double>items[POL_SIZE];void init(){isFFT=1;initRev(initLen());return;}int initLen(){register int k=0;FFTlen=1;while((1<<k)<len)++k,FFTlen<<=1;return k;}void initRev(int k){for(register int i=0;i<FFTlen;++i)rev[i]=(rev[i>>1]>>1)|((i&1)<<(k-1));return;}void clear(){memset(this,0,sizeof(POL));return;}void fft(){for(register int i=0;i<FFTlen;++i)if(i<rev[i])swap(items[i],items[rev[i]]);register std::complex<double>wn,w,x,y;for(register int h=1,j,k;h<FFTlen;h<<=1){wn=exp(std::complex<double>(0,1.0*isFFT*pi/h));for(j=0;j<FFTlen;j+=(h<<1)){w=1;for(k=j;k<j+h;k++){x=items[k];y=w*items[k+h];items[k]=x+y;items[k+h]=x-y;w*=wn;}}}if(isFFT==-1){for(register int i=0;i<FFTlen;++i)items[i]/=FFTlen;isFFT=1;}else isFFT=-1;return;}};

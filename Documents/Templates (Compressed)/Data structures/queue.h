@@ -1,0 +1,2 @@
+#define QUEUE_TYPE int
+const int QUEUE_SIZE=1000;struct QUEUE{QUEUE_TYPE q[QUEUE_SIZE];int head,tail;QUEUE(){head=0;tail=-1;return;}void push(QUEUE_TYPE in){q[++tail]=in;return;}void pop(){head=head+1;return;}void pop_back(){tail=tail-1;return;}QUEUE_TYPE front(){return q[head];}QUEUE_TYPE back(){return q[tail];}void clear(){head=0;tail=-1;return;}bool empty(){if(tail+1==head)return true;else return false;}int size(){return tail-head+1;}QUEUE_TYPE read(int in){return q[head+in];}};

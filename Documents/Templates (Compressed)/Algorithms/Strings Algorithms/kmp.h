@@ -1,0 +1,2 @@
+#include<cstring>
+const int STRING_LENGTH=1000010;void kmp(char txt[],char pat[]){int kmp[STRING_LENGTH],txtlen=strlen(txt),patlen=strlen(pat);memset(kmp,0,sizeof(kmp));register int j=0;for(register int i=1;i<patlen;++i){while(j&&pat[i]!=pat[j])j=kmp[j];kmp[i+1]=pat[i]==pat[j]?++j:0;}j=0;for(register int i=0;i<txtlen;++i){while(j&&txt[i]!=pat[j])j=kmp[j];j+=txt[i]==pat[j]?1:0;if(j==patlen)/*something*/;}return;}

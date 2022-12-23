@@ -1,0 +1,3 @@
+#include<cstring>
+#define BIT_DATA_TYPE int
+const int BIT_SIZE=500000+10;struct BIT{BIT_DATA_TYPE tree[BIT_SIZE];int size;void build(BIT_DATA_TYPE*data,int datasize){size=datasize;for(register int i=1;i<=datasize;++i){tree[i]+=data[i];tree[i+lowbit(i)]+=tree[i];}return;}BIT_DATA_TYPE getsum(int l,int r){return presum(r)-presum(l-1);}BIT_DATA_TYPE presum(int pos){BIT_DATA_TYPE sum=0;while(pos){sum+=tree[pos];pos-=lowbit(pos);}return sum;}void add(BIT_DATA_TYPE data,int pos){while(pos<=size){tree[pos]+=data;pos+=lowbit(pos);}}BIT_DATA_TYPE lowbit(BIT_DATA_TYPE x){return x&-x;}void clear(){memset(this,0,sizeof(BIT));return;}}bit;
