@@ -1,5 +1,5 @@
-//binary_searchÀı³Ì
-#include <bits/stdc++.h>//Ê¹ÓÃÍòÄÜÍ·ÎÄ¼ş£¬ÎŞĞèĞ´#include <algorithm> 
+//binary_searchï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>//Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·#includeĞ´#include <algorithm> 
 using namespace std;
 
 int main()
@@ -7,9 +7,9 @@ int main()
   int a[]= {3,9,17,22,23,24};
   const int len=sizeof(a)/sizeof(int);
   if(binary_search(a,a+len,24))
-    cout<<"Êı×é°üº¬24"<<endl; //½á¹ûÊÇ´íÎóµÄ
+    cout<<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½24"<<endl; //ï¿½ï¿½ï¿½ï¿½Ç´ï¿½ï¿½ï¿½ï¿½
   else
-    cout<<"Êı×é²»°üº¬24"<<endl;
+    cout<<"ï¿½ï¿½ï¿½é²»ï¿½ï¿½ï¿½ï¿½24"<<endl;
   return 0;
 }
 

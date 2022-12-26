@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 #define file
 #define mx(a,b) ((a)>(b)?(a):(b))
 #define mn(a,b) ((a)<(b)?(a):(b))

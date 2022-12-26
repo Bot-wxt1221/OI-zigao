@@ -1,5 +1,5 @@
-//listÁ´±í¹é²¢Àý³Ì
-#include <bits/stdc++.h>
+//listï¿½ï¿½ï¿½ï¿½ï¿½é²¢ï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 
 void print(list<int> l)
@@ -18,21 +18,21 @@ int main()
 
   list<int>l2;
   list<int>::iterator ii;
-  l2.splice(l2.begin(),l1);//½«l1µÄÈ«²¿ÔªËØ¹é²¢µ½L2£¬L1Çå¿Õ
+  l2.splice(l2.begin(),l1);//ï¿½ï¿½l1ï¿½ï¿½È«ï¿½ï¿½Ôªï¿½Ø¹é²¢ï¿½ï¿½L2ï¿½ï¿½L1ï¿½ï¿½ï¿½
   ii=l2.begin()++;
-  l1.splice(l1.begin(),l2,ii);//½«l2µÄiiÎ»ÖÃµÄÔªËØ¹é²¢µ½l1£¬l2Ô­ÔªËØÉ¾³ý
+  l1.splice(l1.begin(),l2,ii);//ï¿½ï¿½l2ï¿½ï¿½iiÎ»ï¿½Ãµï¿½Ôªï¿½Ø¹é²¢ï¿½ï¿½l1ï¿½ï¿½l2Ô­Ôªï¿½ï¿½É¾ï¿½ï¿½
   print(l1);
   print(l2);
-  //swap(l1,l2);//½»»»l1,l2
+  //swap(l1,l2);//ï¿½ï¿½ï¿½ï¿½l1,l2
   l1.push_back(8);
   l1.push_back(8);
   l1.push_back(35);
-  l1.unique();//³ýÈ¥Á¬ÐøÖØ¸´ÔªËØ
+  l1.unique();//ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½Ôªï¿½ï¿½
   l2.push_back(30);
-  l1.sort();//ÅÅÐò
+  l1.sort();//ï¿½ï¿½ï¿½ï¿½
   l2.sort();
   print(l1);
-  l2.merge(l1);//L1¹é²¢µ½l2£¬Á½Á´±íÐèÅÅÐò,¾ßÌå¼ûºóÃæµÄ¼û¹é²¢Ëã·¨merge
+  l2.merge(l1);//L1ï¿½é²¢ï¿½ï¿½l2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½é²¢ï¿½ã·¨merge
   print(l2);
   return 0;
 }

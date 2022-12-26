@@ -127,8 +127,8 @@ $$tree_{p}.c_{i}=\sum_{k=0}^{tree_{p}.lChild.size}tree_{p}.lChild.c_{k}\times tr
 ## 0x06 代码
 
 ```cpp
-#include <cstdio>
-#include <cstring>
+#include<cstdio>
+#include<cstring>
 const int mod=19940417;
 #define _mid int mid=((l+r)>>1)
 #define _lChild (p<<1)

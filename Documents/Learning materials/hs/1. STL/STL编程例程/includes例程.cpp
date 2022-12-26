@@ -1,5 +1,5 @@
-//includes例程
-#include <bits/stdc++.h>//使用万能头文件，无需写#include <algorithm> 
+//includes锟斤拷锟斤拷
+#include<bits/stdc++.h>//使锟斤拷锟斤拷锟斤拷头#include写#include <algorithm> 
 using namespace std;
 
 int main()
@@ -9,9 +9,9 @@ int main()
   int lena=sizeof(a)/sizeof(int);
   int lenb=sizeof(b)/sizeof(int);
   if(includes(a,a+lena,b,b+lenb))
-    cout<<"B是A的子集合"<<endl;
+    cout<<"B锟斤拷A锟斤拷锟接硷拷锟斤拷"<<endl;
   else
-    cout<<"B不是A的子集合"<<endl;
+    cout<<"B锟斤拷锟斤拷A锟斤拷锟接硷拷锟斤拷"<<endl;
   return 0;
 }
 

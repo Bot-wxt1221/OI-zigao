@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 //#define file
 #define INPUT_DATA_TYPE int
 #define OUTPUT_DATA_TYPE int

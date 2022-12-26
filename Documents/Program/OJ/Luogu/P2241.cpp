@@ -7,7 +7,7 @@
  */
 //sum=n(n+1)/2+m(m+1)/2
 //squ=Cm,1*Cn,1+Cm,2*Cn,2+...Cm,n*Cn,n
-#include <cstdio>
+#include<cstdio>
 using namespace std;
 int N,M;
 int C(int n,int m);

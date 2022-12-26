@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 #define maxn 100+5
 #define maxm 100+5
 #define mod (1000000+7)

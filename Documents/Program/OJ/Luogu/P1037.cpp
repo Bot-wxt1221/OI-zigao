@@ -1,7 +1,7 @@
-#include <cstdio>
-#include <algorithm>
+#include<cstdio>
+#include<algorithm>
 //**************************************************************************************************
-#include <cstring>
+#include<cstring>
 #define queue_type int
 const int QUEUE_SIZE = 10000+10;
 struct QUEUE{

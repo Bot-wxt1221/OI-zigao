@@ -2,7 +2,7 @@
  * @Author: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
+#include<cstdio>
 #include<queue>
 
 using namespace std;

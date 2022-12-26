@@ -6,7 +6,7 @@
  * @Description: 
  */
 
-#include <cstdio>
+#include<cstdio>
 #define int long long
 using namespace std;
 int read();

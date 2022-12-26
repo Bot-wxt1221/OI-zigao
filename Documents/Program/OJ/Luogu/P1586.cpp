@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 #define maxn 32768
 
 int f[maxn][5];

@@ -6,8 +6,8 @@
 8 10 5 12
 16 4 18 19 9
 */
-#include <cstdio>
-#include <algorithm>
+#include<cstdio>
+#include<algorithm>
 
 int ma[20][20],dp[20][20],s[20][20];
 int que[20],q_i,n,m,r,c,_ans=0x3f3f3f3f;

@@ -1,7 +1,7 @@
 //https://vjudge.net/problem/%E8%AE%A1%E8%92%9C%E5%AE%A2-T2131
 
-#include <iostream>
-#include <set> //ÓÃsetÈİÆ÷ÊµÏÖÈ¥ÖØÓëÅÅĞò
+#include<iostream>
+#include<set> //ï¿½ï¿½setï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 using namespace std;
 set <int> a;
 int n, num, b[100], s = 0;

@@ -5,7 +5,7 @@
  * @LastEditors: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
+#include<cstdio>
 char arr[100000];
 int main(){
     int i=0;

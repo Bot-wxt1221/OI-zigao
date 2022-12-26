@@ -1,5 +1,5 @@
-#include <iostream>
-#include <cstdio>
+#include<iostream>
+#include<cstdio>
 #define int long long
 inline int read();
 int p[5005];

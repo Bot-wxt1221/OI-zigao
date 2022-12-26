@@ -1,6 +1,6 @@
-#include <cstdio>
-#include <cmath>
-#include <algorithm>
+#include<cstdio>
+#include<cmath>
+#include<algorithm>
 
 int read();
 int left[100000],li;

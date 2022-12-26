@@ -1,5 +1,5 @@
-#include <iostream>
-#include <cstdio>
+#include<iostream>
+#include<cstdio>
 #define int long long 
 using namespace std;
 const int N = 500005;

@@ -1,15 +1,15 @@
-#include <iostream>
-#include <algorithm>  //sort()  stable_sort()
+#include<iostream>
+#include<algorithm>  //sort()  stable_sort()
 using namespace std;
 int a[500], b[500], n, s = 0;
 int main() 
 {
 	cin >> n;
 	for(int i = 0; i < n; i++) cin >> a[i];
-	sort(a, a + n); //¶Ô n ¸öÕûÊý½øÐÐÅÅÐò 
+	sort(a, a + n); //ï¿½ï¿½ n ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 	for(int i = 0; i < n; i++)
 	{
-		if(a[i] == a[i+1]) continue; //ÅÐÖØ 
+		if(a[i] == a[i+1]) continue; //ï¿½ï¿½ï¿½ï¿½ 
 		b[s++] = a[i];
 	}
 	cout << s << endl;

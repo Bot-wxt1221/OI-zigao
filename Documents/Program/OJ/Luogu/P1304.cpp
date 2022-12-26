@@ -5,8 +5,8 @@
  * @LastEditors: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
-#include <cmath>
+#include<cstdio>
+#include<cmath>
 int main(){
     int in;
     scanf("%d",&in);

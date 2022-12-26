@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 #define mx(a,b) ((a)>(b)?(a):(b))
 int read(){
     int x=0;char f=0,c=getchar();

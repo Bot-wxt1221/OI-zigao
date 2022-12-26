@@ -5,7 +5,7 @@
  * @LastEditors: Zi_Gao
  * @Description: 数字反转
  */
-#include <cstdio>
+#include<cstdio>
 int main(){
     int in;
     scanf("%d",&in);

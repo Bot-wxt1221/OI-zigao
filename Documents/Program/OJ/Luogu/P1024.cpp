@@ -5,9 +5,9 @@
  * @LastEditors: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
-#include <iostream>
-#include <cmath>
+#include<cstdio>
+#include<iostream>
+#include<cmath>
 #define aaa 0.01
 using namespace std;
 int read();

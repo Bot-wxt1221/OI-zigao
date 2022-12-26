@@ -1,10 +1,10 @@
-#include <cstdio>
+#include<cstdio>
 //#define file
 #define INPUT_DATA_TYPE int
 #define OUTPUT_DATA_TYPE int
 
 //************************************************************************************************
-#include <algorithm>
+#include<algorithm>
 #define MUL_TYPE unsigned long long
 MUL_TYPE mul1(MUL_TYPE x,MUL_TYPE y,MUL_TYPE p){//qiuckly x<=y<=1e18
 	MUL_TYPE z=(long double)x/p*y;

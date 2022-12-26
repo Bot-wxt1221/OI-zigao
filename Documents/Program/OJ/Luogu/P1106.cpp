@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <deque>
+#include<cstdio>
+#include<deque>
 
 std::deque<char> q;
 

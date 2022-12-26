@@ -1,5 +1,5 @@
-//¹é²¢Ëã·¨mergeÀı³Ì
-#include <bits/stdc++.h>//Ê¹ÓÃÍòÄÜÍ·ÎÄ¼ş£¬ÎŞĞèĞ´#include <algorithm> 
+//ï¿½é²¢ï¿½ã·¨mergeï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>//Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·#includeĞ´#include <algorithm> 
 using namespace std;
 
 void print(int x)
@@ -12,13 +12,13 @@ int main()
   int a[]= {2,3,5,12};
   int b[]= {9,81,711,5111,31111};
   int result[9];
-  //ÉıĞò¹é²¢
+  //ï¿½ï¿½ï¿½ï¿½é²¢
   merge(a,a+4,b,b+5,result);
-  for_each(result,result+9,print);//for_eachÀàËÆÓÚforÑ­»·²Ù×÷
+  for_each(result,result+9,print);//for_eachï¿½ï¿½ï¿½ï¿½ï¿½ï¿½forÑ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   cout<<endl;
   int c[]= {9,8,7};
   int d[]= {8,3,1,-1};
-  //½µĞò¹é²¢
+  //ï¿½ï¿½ï¿½ï¿½é²¢
   merge(c,c+3,d,d+4,result,greater<int>());
   for_each(result,result+7,print);
   cout<<endl;

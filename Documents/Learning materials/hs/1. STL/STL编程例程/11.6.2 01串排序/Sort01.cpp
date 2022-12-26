@@ -1,16 +1,16 @@
-//01´®ÅÅÐò
-#include <bits/stdc++.h>
+//01ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 
 struct Comp
 {
   bool operator()(const string &s1,const string &s2)const
   {
-    if(s1.length()!=s2.length())//ÏÈ°´³¤¶ÈÅÅÐò
+    if(s1.length()!=s2.length())//ï¿½È°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       return s1.length()<s2.length();
     int c1=count(s1.begin(),s1.end(),'1');
     int c2=count(s2.begin(),s2.end(),'1');
-    return c1!=c2?c1<c2:s1<s2;//°´1µÄ¸öÊýÅÅÐò£¬ÈôÏàÍ¬°´ASCIIÂëÅÅÐò
+    return c1!=c2?c1<c2:s1<s2;//ï¿½ï¿½1ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ASCIIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   }
 };
 

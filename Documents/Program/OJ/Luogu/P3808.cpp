@@ -1,8 +1,8 @@
-#include <cstdio>
+#include<cstdio>
 // #define file
 
 //************************************************************************************************
-#include <cstring>
+#include<cstring>
 #define AC_TYPE char
 #define QUEUE_HEAP int
 const int AC_DATA_SIZE=26;
@@ -78,7 +78,7 @@ struct QUEUE{
 	}
 }q;
 
-// #include <queue>
+// #include<queue>
 // std::queue <int>q;
 
 struct AC{

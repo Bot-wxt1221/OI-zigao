@@ -1,17 +1,17 @@
-#include <cstdio>
-#include <cmath>
-#include <algorithm>
-#include <iostream>
-#include <cstring>
-#include <map>
-#include <string>
-#include <stack>
-#include <cctype>
-#include <vector>
-#include <queue>
-#include <set>
-#include <utility>
-#include <cassert>
+#include<cstdio>
+#include<cmath>
+#include<algorithm>
+#include<iostream>
+#include<cstring>
+#include<map>
+#include<string>
+#include<stack>
+#include<cctype>
+#include<vector>
+#include<queue>
+#include<set>
+#include<utility>
+#include<cassert>
 using namespace std;
 ///#define Online_Judge
 #define outstars cout << "***********************" << endl;
@@ -48,23 +48,23 @@ void solve()
     int n = 1 << M;
     double *pre = dp[0] , *nxt = dp[1];
     memset(pre , 0 , sizeof(double) * (n + 1));
-///    memset(pre , 0 , sizeof(pre)); ÕâÑù³õÊ¼»¯ÊÇ²»ÐÐµÄ£¬ÒòÎªpreÎªÒ»¸ödoubleÐÍµÄÖ¸Õë£¬²»ÊÇÕû¸öÊý×é¡£
+///    memset(pre , 0 , sizeof(pre)); ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ÐµÄ£ï¿½ï¿½ï¿½ÎªpreÎªÒ»ï¿½ï¿½doubleï¿½Íµï¿½Ö¸ï¿½ë£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é¡£
     pre[n] = 1.0;
-    for(int r = 0 ; r < M; r++)///Ã¶¾ÙµÚ¼¸ÂÖ
+    for(int r = 0 ; r < M; r++)///Ã¶ï¿½ÙµÚ¼ï¿½ï¿½ï¿½
     {
-        for(int i = 0 ; i <= n ; i++)///Ã¶¾Ùµ±Ç°ÊÇÄÄÖÖ×´Ì¬
+        for(int i = 0 ; i <= n ; i++)///Ã¶ï¿½Ùµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
         {
-            int step = min(i , n - i);///Èç¹ûstep´óÓÚn / 2 £¬ µÈ»á¶ù×ªÒÆµÄÊ±ºò¿ÉÄÜ»á³¬¹ýn
+            int step = min(i , n - i);///ï¿½ï¿½ï¿½stepï¿½ï¿½ï¿½ï¿½n / 2 ï¿½ï¿½ ï¿½È»ï¿½ï¿½×ªï¿½Æµï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ü»á³¬ï¿½ï¿½n
             double t = 0.0;
-            for(int j = 0 ; j <= step ; j++)///Ã¶¾Ùµ±Ç°µÄËùÓÐ¿ÉÄÜ×ß·¨
+            for(int j = 0 ; j <= step ; j++)///Ã¶ï¿½Ùµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½ï¿½ß·ï¿½
             {
-                t = max(t , P * pre[i + j] + (1 - P) * pre[i - j]);///Çó³öÆÚÍûµÄ×î´óÖµ
+                t = max(t , P * pre[i + j] + (1 - P) * pre[i - j]);///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
             }
             nxt[i] = t;
         }
-        swap(pre , nxt);///½»»»Á½¸öÊý×éµÄÖµ½øÐÐ¹ö¶¯
+        swap(pre , nxt);///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Ð¹ï¿½ï¿½ï¿½
     }
-    int i = (LL)X * n / 1000000;///ÕÒµ½X¶ÔÓ¦µÄÊÇµÚ¼¸¿é
+    int i = (LL)X * n / 1000000;///ï¿½Òµï¿½Xï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ÇµÚ¼ï¿½ï¿½ï¿½
 //    for(int i = 0 ; i <= n ; i++)cout << '*' << pre[i] << endl;
     printf("%.6lf\n" , pre[i]);
 }

@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <queue>
+#include<cstdio>
+#include<queue>
 #define INPUT_DATA_TYPE int
 #define OUTPUT_DATA_TYPE int
 #define MAXN (200000+10)

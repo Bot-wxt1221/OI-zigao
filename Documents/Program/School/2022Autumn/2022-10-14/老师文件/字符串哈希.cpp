@@ -1,11 +1,11 @@
-//×Ö·û´®¹þÏ£
-#include <bits/stdc++.h>
+//ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ï£
+#include<bits/stdc++.h>
 using namespace std;
 
 const int MAXN = 2005;
 unsigned long long B = 29;
 unsigned long long h[MAXN], p[MAXN];
-unordered_set<unsigned long long> T;  //´æ²»Í¬Âú×ã A+AÐÎÊ½µÄ×Ó´®¹þÏ£Öµ 
+unordered_set<unsigned long long> T;  //ï¿½æ²»Í¬ï¿½ï¿½ï¿½ï¿½ A+Aï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ó´ï¿½ï¿½ï¿½Ï£Öµ 
 
 int solve(string str) {
 	h[0] = 0, p[0] = 1; // p[i] = Base ^ i
@@ -37,8 +37,8 @@ int main() {
 }
 
 /*
-ÊäÈë£º
+ï¿½ï¿½ï¿½ë£º
 abcabcabc
-Êä³ö 
+ï¿½ï¿½ï¿½ 
 3
 */

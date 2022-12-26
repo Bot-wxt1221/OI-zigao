@@ -1,7 +1,7 @@
-#include <cstdio>
-#include <cstring>
-#include <queue>
-#include <algorithm>
+#include<cstdio>
+#include<cstring>
+#include<queue>
+#include<algorithm>
 #define file
 
 #define QUEUE_DATA_TYPE int

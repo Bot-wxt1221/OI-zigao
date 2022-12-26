@@ -5,7 +5,7 @@
  * @LastEditors: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
+#include<cstdio>
 int main(){
 printf("                ********\n");
 printf("               ************\n");

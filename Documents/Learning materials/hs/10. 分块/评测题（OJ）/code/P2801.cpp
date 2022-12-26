@@ -1,10 +1,10 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 const int MAXN = 1000005, SQ = 1005; 
 int st[SQ], ed[SQ], size[SQ], bel[MAXN]; 
 
-void init_block(int n) // ³õÊ¼»¯
+void init_block(int n) // ï¿½ï¿½Ê¼ï¿½ï¿½
 { 
 	int sq = sqrt(n); 
 	for (int i = 1; i <= sq; ++i) 
@@ -21,8 +21,8 @@ void init_block(int n) // ³õÊ¼»¯
 } 
 
 int A[MAXN], mark[SQ]; 
-vector<int> v[SQ]; // ÕâÀïÓÃvector´æÅÅĞòºóµÄÊı×é
-void update(int b) // ¸üĞÂÅÅĞòºóµÄÊı×é
+vector<int> v[SQ]; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vectorï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void update(int b) // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 { 
 	for (int i = 0; i <= size[b]; ++i)
 	v[b][i] = A[st[b] + i]; 
@@ -48,20 +48,20 @@ int main()
 		int l = read(), r = read(), k = read(); 
 		if (o == 'M') 
 		{ 
-			if (bel[l] == bel[r]) // Èç¹ûÍ¬ÊôÒ»¿éÖ±½Ó±©Á¦
+			if (bel[l] == bel[r]) // ï¿½ï¿½ï¿½Í¬ï¿½ï¿½Ò»ï¿½ï¿½Ö±ï¿½Ó±ï¿½ï¿½ï¿½
 			{ 
 				for (int i = l; i <= r; ++i) 
 					A[i] += k; 
 				update(bel[l]); 
 				continue; 
 			} 
-			for (int i = l; i <= ed[bel[l]]; ++i) // ¶ÔÁãÉ¢¿é±©Á¦´¦Àí
+			for (int i = l; i <= ed[bel[l]]; ++i) // ï¿½ï¿½ï¿½ï¿½É¢ï¿½é±©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				A[i] += k; 
 			for (int i = st[bel[r]]; i <= r; ++i) 
 				A[i] += k; 
 			update(bel[l]); 
 			update(bel[r]); 
-			for (int i = bel[l] + 1; i < bel[r]; ++i) // ´òÉÏ±ê¼Ç
+			for (int i = bel[l] + 1; i < bel[r]; ++i) // ï¿½ï¿½ï¿½Ï±ï¿½ï¿½
 				mark[i] += k; 
 			} 
 		else
@@ -81,7 +81,7 @@ int main()
 			for (int i = st[bel[r]]; i <= r; ++i) 
 				if (A[i] + mark[bel[r]] >= k) 
 					tot++;
-			// ¶ş·Ö²éÕÒk-mark[i]µÄÎ»ÖÃ£¬ÒòÎªÕû¿é¶¼¼ÓÉÏÁËmark[i]ÆäÊµ¾ÍÏàµ±ÓÚk¼õÈ¥mark[i] 
+			// ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½k-mark[i]ï¿½ï¿½Î»ï¿½Ã£ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½é¶¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½mark[i]ï¿½ï¿½Êµï¿½ï¿½ï¿½àµ±ï¿½ï¿½kï¿½ï¿½È¥mark[i] 
 			for (int i = bel[l] + 1; i < bel[r]; ++i) 
 				tot += v[i].end() - lower_bound(v[i].begin(), v[i].end(), k - mark[i]);
 			printf("%d\n", tot); 

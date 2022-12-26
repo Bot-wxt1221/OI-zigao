@@ -1,21 +1,21 @@
-//stackÀı³Ì
-#include <bits/stdc++.h>//Ê¹ÓÃÍòÄÜÍ·ÎÄ¼ş£¬ÎŞĞèĞ´#include <stack> 
+//stackï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>//Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·#includeĞ´#include <stack> 
 using namespace std;
 #define STACK_SIZE 100
 
 int main()
 {
   stack<string> s;
-  s.push("aaa");//ÈëÕ»
+  s.push("aaa");//ï¿½ï¿½Õ»
   s.push("bbb");
   s.push("ccc");
-  if(s.size()<STACK_SIZE)//¿ÉÏŞÖÆ´óĞ¡
+  if(s.size()<STACK_SIZE)//ï¿½ï¿½ï¿½ï¿½ï¿½Æ´ï¿½Ğ¡
     s.push("68");
-  cout<<s.size()<<endl;//Êä³öÕ»ÄÚÔªËØ¸öÊı
-  while(!s.empty())//µ±Õ»²»Îª¿Õ
+  cout<<s.size()<<endl;//ï¿½ï¿½ï¿½Õ»ï¿½ï¿½Ôªï¿½Ø¸ï¿½ï¿½ï¿½
+  while(!s.empty())//ï¿½ï¿½Õ»ï¿½ï¿½Îªï¿½ï¿½
   {
-    cout<<s.top()<<endl;//³öÕ»
-    s.pop();//³öÕ»
+    cout<<s.top()<<endl;//ï¿½ï¿½Õ»
+    s.pop();//ï¿½ï¿½Õ»
   }
   return 0;
 }

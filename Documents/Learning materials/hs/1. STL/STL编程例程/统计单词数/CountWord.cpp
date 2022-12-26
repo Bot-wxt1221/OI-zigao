@@ -1,5 +1,5 @@
-//Í³¼Æµ¥´ÊÊý
-#include <bits/stdc++.h>
+//Í³ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -13,20 +13,20 @@ int main()
   {
     if(c==' ')
     {
-      if(s.length())//µ±×Ö·û´®²»Îª¿Õ
-        word.insert(s);//Ìí¼Óµ¥´Ê
-      s.clear();//»òÕß s=""
+      if(s.length())//ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½
+        word.insert(s);//ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½
+      s.clear();//ï¿½ï¿½ï¿½ï¿½ s=""
     }
-    else if(c=='\n' || c=='\r')//¶Áµ½ÐÐÄ©
+    else if(c=='\n' || c=='\r')//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä©
     {
       if(s.length())
         word.insert(s);
-      printf("%d\n",word.size());//¼ÆËãÍê±Ï£¬Êä³ö½á¹û
-      word.clear();//Çå¿Õset
-      s.clear();//»òÕß s=""
+      printf("%d\n",word.size());//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+      word.clear();//ï¿½ï¿½ï¿½set
+      s.clear();//ï¿½ï¿½ï¿½ï¿½ s=""
     }
     else
-      s+=c;//²»ÊÇ¿Õ¸ñ»òÐÐÄ©¾ÍÀÛ¼Óµ½×Ö·û´®s
+      s+=c;//ï¿½ï¿½ï¿½Ç¿Õ¸ï¿½ï¿½ï¿½ï¿½Ä©ï¿½ï¿½ï¿½Û¼Óµï¿½ï¿½Ö·ï¿½ï¿½ï¿½s
   }
   return 0;
 }

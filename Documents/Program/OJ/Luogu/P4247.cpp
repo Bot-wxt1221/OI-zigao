@@ -39,7 +39,6 @@ struct SEQ{
 
     inline void updata(int q){
         register int i,j;
-        // memset(tree[q].c,0,sizeof(tree[q].c));
         tree[q].c[0]=tree[q].c[1]=tree[q].c[2]=tree[q].c[3]=tree[q].c[4]=tree[q].c[5]=tree[q].c[6]=tree[q].c[7]=tree[q].c[8]=tree[q].c[9]=tree[q].c[10]=tree[q].c[11]=tree[q].c[12]=tree[q].c[13]=tree[q].c[14]=tree[q].c[15]=tree[q].c[16]=tree[q].c[17]=tree[q].c[18]=tree[q].c[19]=tree[q].c[20]=0;
         for(i=0;i<=min(20,tree[_lChild].size);++i)
             for(j=0;i+j<=20&&j<=tree[_rChild].size;++j)

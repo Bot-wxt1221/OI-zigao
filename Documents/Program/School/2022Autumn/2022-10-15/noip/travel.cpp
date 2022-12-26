@@ -1,6 +1,6 @@
-#include <cstdio>
-#include <cstring>
-#include <algorithm>
+#include<cstdio>
+#include<cstring>
+#include<algorithm>
 // #define file
 
 int e[5000+2][5000+2];

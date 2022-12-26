@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <algorithm>
+#include<cstdio>
+#include<algorithm>
 #define _max(a,b) ((a)>(b)?(a):(b))
 #define _min(a,b) ((a)<(b)?(a):(b))
 

@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <cstring>
+#include<cstdio>
+#include<cstring>
 #define mi(a,b) ((a)<(b)?(a):(b))
 
 #define file

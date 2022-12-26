@@ -1,36 +1,36 @@
-//deque例程
-#include <bits/stdc++.h>
+//deque锟斤拷锟斤拷
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-  deque<string>d;//定义一个包含string类型的deque
-  d.push_back("A");//尾部插入元素
+  deque<string>d;//锟斤拷锟斤拷一锟斤拷锟斤拷锟斤拷string锟斤拷锟酵碉拷deque
+  d.push_back("A");//尾锟斤拷锟斤拷锟斤拷元锟斤拷
   d.push_back("B");
   d.push_back("C");
-  d.push_front("X");//头部插入元素
+  d.push_front("X");//头锟斤拷锟斤拷锟斤拷元锟斤拷
   d.push_front("Y");
-  //d.pop_front();//删除首元素
-  //d.pop_back();//删除尾元素
-  //d.erase(d.begin()+1);//删除指定位置元素
-  //d.clear();//删除所有元素
-  d.insert(d.end()-2,"O");//指定位置插入
+  //d.pop_front();//删锟斤拷锟斤拷元锟斤拷
+  //d.pop_back();//删锟斤拷尾元锟斤拷
+  //d.erase(d.begin()+1);//删锟斤拷指锟斤拷位锟斤拷元锟斤拷
+  //d.clear();//删锟斤拷锟斤拷锟斤拷元锟斤拷
+  d.insert(d.end()-2,"O");//指锟斤拷位锟矫诧拷锟斤拷
 
-  reverse(d.begin(),d.end());//反转元素顺序
-  for(int i=0; i<d.size(); i++) //数组方式访问
+  reverse(d.begin(),d.end());//锟斤拷转元锟斤拷顺锟斤拷
+  for(int i=0; i<d.size(); i++) //锟斤拷锟介方式锟斤拷锟斤拷
     cout<<d[i]<<" ";
   cout<<endl;
 
-  swap(d[1],d[2]);//两元素交换
-  deque<string>::iterator i;//迭代器访问
+  swap(d[1],d[2]);//锟斤拷元锟截斤拷锟斤拷
+  deque<string>::iterator i;//锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
   for(i=d.begin(); i!=d.end(); i++)
     cout<<*i<<" ";
   cout<<endl;
 
-  cout<<"\ndeque是否为空 "<<d.empty();
-  cout<<"\ndeque元素个数为 "<<d.size();
-  cout<<"\ndeque的首元素为 "<<d.front();
-  cout<<"\ndeque的末元素为 "<<d.back();
+  cout<<"\ndeque锟角凤拷为锟斤拷 "<<d.empty();
+  cout<<"\ndeque元锟截革拷锟斤拷为 "<<d.size();
+  cout<<"\ndeque锟斤拷锟斤拷元锟斤拷为 "<<d.front();
+  cout<<"\ndeque锟斤拷末元锟斤拷为 "<<d.back();
   return 0;
 }
 

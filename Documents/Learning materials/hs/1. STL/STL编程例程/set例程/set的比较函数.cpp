@@ -1,23 +1,23 @@
-//setµÄ±È½Ïº¯Êý
-#include <bits/stdc++.h>
+//setï¿½Ä±È½Ïºï¿½ï¿½ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 
 struct Comp
 {
-  bool operator() (const int &a,const int &b)//ÖØÔØ()²Ù×÷·û£¬ÕÕ³­¼´¿É
+  bool operator() (const int &a,const int &b)//ï¿½ï¿½ï¿½ï¿½()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ³ï¿½ï¿½ï¿½ï¿½ï¿½
   {
-    return a>b;      //´Ó´óµ½Ð¡ÅÅÐò
-    //return a < b;  //´ÓÐ¡µ½´óÅÅÐò
+    return a>b;      //ï¿½Ó´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
+    //return a < b;  //ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   }
-};//ÐèÔÚ½á¹¹ÌåÄÚ¶¨Òå±È½Ïº¯Êý
+};//ï¿½ï¿½ï¿½Ú½á¹¹ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½È½Ïºï¿½ï¿½ï¿½
 
 int main()
 {
-  set<int,Comp> s;//setµ÷ÓÃµÄ±È½Ïº¯ÊýÎªComp
-  for(int i=1; i<=10; ++i)//´Ë´¦ÊÇÓÉÐ¡µ½µ½¸³Öµ
+  set<int,Comp> s;//setï¿½ï¿½ï¿½ÃµÄ±È½Ïºï¿½ï¿½ï¿½ÎªComp
+  for(int i=1; i<=10; ++i)//ï¿½Ë´ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
     s.insert(i);
   set<int>::iterator ii;
-  for(ii=s.begin(); ii!=s.end(); ii++)//±éÀú
+  for(ii=s.begin(); ii!=s.end(); ii++)//ï¿½ï¿½ï¿½ï¿½
     cout<<*ii<<' ';
   return 0;
 }

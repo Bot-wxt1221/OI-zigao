@@ -1,8 +1,8 @@
-#include <cstdio>
+#include<cstdio>
 //#define file
 
 //************************************************************************************************
-#include <cstring>
+#include<cstring>
 #define MATRIX_MOD %123456
 #define MATRIX_DATA_TYPE long
 const int MATRIX_MAX_N=100;

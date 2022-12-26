@@ -1,6 +1,6 @@
-#include <cstdio>
-#include <queue>
-#include <algorithm>
+#include<cstdio>
+#include<queue>
+#include<algorithm>
 std::priority_queue<int> pq,pq2;
 int read(){
     int x=0;char f=0,c=getchar();

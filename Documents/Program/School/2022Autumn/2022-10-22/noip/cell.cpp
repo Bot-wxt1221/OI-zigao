@@ -1,6 +1,6 @@
 #pragma GCC optimize(3,"Ofast","inline")
-#include <cstdio>
-#include <algorithm>
+#include<cstdio>
+#include<algorithm>
 #define file
 #define INPUT_DATA_TYPE int
 #define OUTPUT_DATA_TYPE int

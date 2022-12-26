@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <algorithm>
+#include<cstdio>
+#include<algorithm>
 #define maxdata (10000+10)
 #define mx(a,b) ((a)>(b)?(a):(b))
 

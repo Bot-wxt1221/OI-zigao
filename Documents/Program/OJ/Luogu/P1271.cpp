@@ -5,8 +5,8 @@
  * @LastEditors: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
-#include <algorithm>
+#include<cstdio>
+#include<algorithm>
 using namespace std;
 int read();
 int main(){

@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 
 const int maxlen=100+10;
 

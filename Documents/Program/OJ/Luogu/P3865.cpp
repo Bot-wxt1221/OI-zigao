@@ -1,6 +1,6 @@
-#include <cstdio>
-#include <algorithm>
-#include <cmath>
+#include<cstdio>
+#include<algorithm>
+#include<cmath>
 #define mx(a,b) ((a)>(b)?(a):(b))
 
 #define MAX_I 100000+10

@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <queue>
+#include<cstdio>
+#include<queue>
 
 #define HEAP_TYPE >
 #define BST_DATA_TYPE long long

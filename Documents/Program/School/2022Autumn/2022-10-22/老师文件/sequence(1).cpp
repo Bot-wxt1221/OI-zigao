@@ -1,6 +1,6 @@
-#include <cstdio>
-#include <cstring>
-#include <iostream>
+#include<cstdio>
+#include<cstring>
+#include<iostream>
 #define cs const
 #define pb push_back
 using namespace std;

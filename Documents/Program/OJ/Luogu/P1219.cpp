@@ -5,9 +5,9 @@
  * @LastEditors: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
-#include <cstring>
-#include <cmath>
+#include<cstdio>
+#include<cstring>
+#include<cmath>
 using namespace std;
 void DFS(int hang);
 void doflag(int x,int y);

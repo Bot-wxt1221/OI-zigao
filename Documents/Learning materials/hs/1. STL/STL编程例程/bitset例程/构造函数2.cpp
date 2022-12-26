@@ -1,12 +1,12 @@
-//¹¹Ôìº¯Êı2
-#include <bits/stdc++.h>
+//ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½2
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-  bitset<5> bin(5);//´Ó×óÏòÓÒ¸³Öµ
+  bitset<5> bin(5);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò¸ï¿½Öµ
   for(int i=0; i<=4; i++)
-    cout<<bin[i];//´òÓ¡³ö10100
+    cout<<bin[i];//ï¿½ï¿½Ó¡ï¿½ï¿½10100
   return 0;
 }
 

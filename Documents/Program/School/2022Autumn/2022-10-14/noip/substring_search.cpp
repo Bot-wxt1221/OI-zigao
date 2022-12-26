@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <cstring>
+#include<cstdio>
+#include<cstring>
 #define file
 
 char txt[1000010],pat[1000010];

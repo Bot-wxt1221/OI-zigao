@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 struct stu
 {
@@ -19,8 +19,8 @@ int main()
 	minm = min(minm, n);
 	for(int i = 0; i < n; i++) cin >> e[i].id >> e[i].s;
 	sort(e, e + n, cmp);  
-	int flag = minm - 1;  //±ê¼Ç×îµÍ·ÖµÄÏÂ±ê 
-	for(int i = minm; i < n; i++) //Èç¹ûºóÃæ·ÖÓë×îµÍ·ÖÏàÍ¬£¬ÔòÃæÊÔÈËÊıÔö¼Ó 
+	int flag = minm - 1;  //ï¿½ï¿½ï¿½ï¿½ï¿½Í·Öµï¿½ï¿½Â±ï¿½ 
+	for(int i = minm; i < n; i++) //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 		if(e[i].s == e[flag].s) minm++;
 	cout << e[minm-1].s << " " << minm << endl;
 	for(int i = 0; i < minm; i++)

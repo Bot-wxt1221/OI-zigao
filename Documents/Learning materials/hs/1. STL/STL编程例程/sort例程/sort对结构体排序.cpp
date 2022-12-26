@@ -1,5 +1,5 @@
-//sort¶Ô½á¹¹ÌåÅÅÐò
-#include <bits/stdc++.h>
+//sortï¿½Ô½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 
 struct Node
@@ -10,8 +10,8 @@ struct Node
 int Cmp(Node a,Node b)
 {
   if (a.x != b.x)
-    return a.x < b.x;  //Èç¹ûa.x²»µÈÓÚb.x£¬¾Í°´x´ÓÐ¡µ½´óÅÅ
-  return a.y < b.y;  //Èç¹ûxÏàµÈ°´y´ÓÐ¡µ½´óÅÅ
+    return a.x < b.x;  //ï¿½ï¿½ï¿½a.xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½b.xï¿½ï¿½ï¿½Í°ï¿½xï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  return a.y < b.y;  //ï¿½ï¿½ï¿½xï¿½ï¿½È°ï¿½yï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 }
 
 int main()
@@ -20,7 +20,7 @@ int main()
   scanf("%d",&n);
   for (int i = 1; i <= n; i++)
     cin>>p[i].x>>p[i].y;
-  sort(p+1,p+n+1,Cmp);//ÅÅÐò£¬±È½Ïº¯ÊýÎªCmp
+  sort(p+1,p+n+1,Cmp);//ï¿½ï¿½ï¿½ò£¬±È½Ïºï¿½ï¿½ï¿½ÎªCmp
   for (int i = 1; i <=n; i++)
     cout<<p[i].x<<" "<<p[i].y<<endl;
   return 0;

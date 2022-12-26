@@ -1,8 +1,8 @@
-#include <cstdio>
+#include<cstdio>
 // #define file
 
 //************************************************************************************************
-#include <cstring>
+#include<cstring>
 #define TRIE_TYPE char
 const int TRIE_DATA_SIZE=128;
 const int TRIE_TREE_SIZE=100;

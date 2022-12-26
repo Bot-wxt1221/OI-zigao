@@ -5,7 +5,7 @@
  * @LastEditors: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
+#include<cstdio>
 int main(){
     int N=0;
     bool flag=true;

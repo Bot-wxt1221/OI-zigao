@@ -1,5 +1,5 @@
-//±í´ïÊ½À¨ºÅÆ¥Åä1
-#include <bits/stdc++.h>
+//ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Æ¥ï¿½ï¿½1
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()

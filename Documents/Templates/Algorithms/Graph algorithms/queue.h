@@ -1,4 +1,4 @@
-#include <cstring>
+#include<cstring>
 #define queue_type int
 const int QUEUE_SIZE = 1000;
 struct QUEUE{

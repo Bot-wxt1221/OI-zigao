@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 #define INPUT_DATA_TYPE unsigned long long
 #define OUTPUT_DATA_TYPE unsigned long long
 

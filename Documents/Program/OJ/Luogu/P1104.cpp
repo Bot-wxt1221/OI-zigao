@@ -5,9 +5,9 @@
  * @LastEditors: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
-#include <iostream>
-#include <algorithm>
+#include<cstdio>
+#include<iostream>
+#include<algorithm>
 using namespace std;
 struct bir{
     char name[25];

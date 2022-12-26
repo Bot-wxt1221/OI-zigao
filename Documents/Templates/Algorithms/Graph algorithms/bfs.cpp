@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 
 #define file
 const int MAX_N=5000+10;

@@ -1,8 +1,8 @@
-//adjacent_findÀı³Ì
-#include <bits/stdc++.h>//Ê¹ÓÃÍòÄÜÍ·ÎÄ¼ş£¬ÎŞĞèĞ´#include <algorithm> 
+//adjacent_findï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>//Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·#includeĞ´#include <algorithm> 
 using namespace std;
 
-bool Equal(int x,int y)//ÓÃÓÚÅĞ¶ÏÊÇ·ñÆæÅ¼ÏàÍ¬
+bool Equal(int x,int y)//ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Å¼ï¿½ï¿½Í¬
 {
   return (x-y)%2==0?1:0;
 }
@@ -17,19 +17,19 @@ int main()
   l.push_back(33);
   l.push_back(52);
   l.push_back(12);
-  //²éÕÒÁÚ½ÓÏàµÈµÄÔªËØ
+  //ï¿½ï¿½ï¿½ï¿½ï¿½Ú½ï¿½ï¿½ï¿½Èµï¿½Ôªï¿½ï¿½
   list<int>::iterator i=adjacent_find(l.begin(),l.end());
   if(i!=l.end())
   {
-    cout<<"Á½¸öÏàÁÚµÄÔªËØÏàµÈ"<<*i<<' ';
+    cout<<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½"<<*i<<' ';
     i++;
     cout<<*i<<endl;
   }
-  // ÕÒ³öÊ×¸öÁ½¸öÏàÁÚµÄÔªËØÆæÅ¼ĞÔÏàÍ¬
+  // ï¿½Ò³ï¿½ï¿½×¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½Ôªï¿½ï¿½ï¿½ï¿½Å¼ï¿½ï¿½ï¿½ï¿½Í¬
   list<int>::iterator ii=adjacent_find(l.begin(),l.end(),Equal);
   if(i!=l.end())
   {
-    cout<<"ÕÒ³öÊ×¸öÁ½¸öÏàÁÚµÄÔªËØÆæÅ¼ĞÔÏàÍ¬"<<*ii<<' ';
+    cout<<"ï¿½Ò³ï¿½ï¿½×¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½Ôªï¿½ï¿½ï¿½ï¿½Å¼ï¿½ï¿½ï¿½ï¿½Í¬"<<*ii<<' ';
     ii++;
     cout<<*ii<<endl;
   }

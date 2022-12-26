@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 #define INPUT_DATA_TYPE int
 #define OUTPUT_DATA_TYPE long long
 #define MAXN (20+10)

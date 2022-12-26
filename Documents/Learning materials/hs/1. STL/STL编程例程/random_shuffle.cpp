@@ -1,5 +1,5 @@
-//random_shuffleÀý³Ì 
-#include <bits/stdc++.h>
+//random_shuffleï¿½ï¿½ï¿½ï¿½ 
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -7,14 +7,14 @@ int main()
   vector<int>v;
   for(int i=0; i<=9; i++)
     v.push_back(i);
-  random_shuffle(v.begin(),v.end());//¶ÔvectorËæ»úÅÅÐò
+  random_shuffle(v.begin(),v.end());//ï¿½ï¿½vectorï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   for(int i=0; i<v.size(); i++)
     cout<<v[i]<<" ";
   cout<<endl;
   int a[10];
   for(int i=0; i<=9; i++)
     a[i]=10*i;
-  random_shuffle(a,a+10);           //¶ÔÊý×éËæ»úÅÅÐò 
+  random_shuffle(a,a+10);           //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
   for(int i=0; i<=9; i++)
     cout<<a[i]<<" ";
   return 0;

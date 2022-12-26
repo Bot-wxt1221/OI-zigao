@@ -2,9 +2,9 @@
  * @Author: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
-#include <cmath>
-#include <cstring>
+#include<cstdio>
+#include<cmath>
+#include<cstring>
 //#define file
 using namespace std;
 

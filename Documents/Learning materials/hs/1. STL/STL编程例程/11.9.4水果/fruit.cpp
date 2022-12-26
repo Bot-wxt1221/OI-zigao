@@ -1,5 +1,5 @@
-//Ë®¹û
-#include <bits/stdc++.h>//Ê¹ÓÃÍòÄÜÍ·ÎÄ¼ş£¬ÎŞĞèĞ´#include <map> 
+//Ë®ï¿½ï¿½
+#include<bits/stdc++.h>//Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·#includeĞ´#include <map> 
 using namespace std;
 
 int main()
@@ -12,11 +12,11 @@ int main()
   {
     cin>>n;
     char name[100],place[100];
-    map<string,map<string,int> > list;//×¢Òâ">"Ö®¼äÒª¿Õ¸ñ
+    map<string,map<string,int> > list;//×¢ï¿½ï¿½">"Ö®ï¿½ï¿½Òªï¿½Õ¸ï¿½
     while(n--)
     {
       cin>>name>>place>>count;
-      list[place][name]+=count;//±£´æµØÃû£¬ÖÖÀà£¬´ÎÊı£»
+      list[place][name]+=count;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     }
     map<string,map<string,int> >::iterator it;
     map<string,int>::iterator it1;

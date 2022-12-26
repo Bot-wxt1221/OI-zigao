@@ -1,12 +1,12 @@
-//¸øÅóÓÑÅÅĞòSTL·½Ê½
-#include <bits/stdc++.h>
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½STLï¿½ï¿½Ê½
+#include<bits/stdc++.h>
 using namespace std;
 
-map<string,int>freq;//×Ö·û´®µ½ÕûÊıÓ³Éä£¬±£´æĞÕµÄ´ÎÊı£¬ÈçÊı×é£¬ÏÂ±êÎª×Ö·û´®
+map<string,int>freq;//ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ä£¬ï¿½ï¿½ï¿½ï¿½ï¿½ÕµÄ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½Â±ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½
 
-string Key(const string &s)//ÊäÈëÈ«Ãû£¬·µ»ØĞÕ
+string Key(const string &s)//ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 {
-  return s.substr(0,s.find(" "));//ÕÒµÚÒ»¸ö¿Õ¸ñ£¬È»ºóÈ¡ËüÇ°ÃæµÄ´®
+  return s.substr(0,s.find(" "));//ï¿½Òµï¿½Ò»ï¿½ï¿½ï¿½Õ¸ï¿½È»ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½ï¿½Ä´ï¿½
 }
 
 int Cmp(const string &a,const string &b)
@@ -18,14 +18,14 @@ int main()
 {
   freopen("friends.in","r",stdin);
   freopen("friends.out","w",stdout);
-  vector<string> v;//¿É±ä³¤Êı×é£¬ÎŞĞëÉùÃ÷´óĞ¡
+  vector<string> v;//ï¿½É±ä³¤ï¿½ï¿½ï¿½é£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¡
   string s1,s2;
   while(cin>>s1>>s2)
   {
-    v.push_back(s1+" "+s2);//ÓÃpush_back,pop_backÍùÄ©Î²Ìí¼ÓÉ¾³ıÔªËØ
+    v.push_back(s1+" "+s2);//ï¿½ï¿½push_back,pop_backï¿½ï¿½Ä©Î²ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½Ôªï¿½ï¿½
     ++freq[s1];
   }
-  stable_sort(v.begin(),v.end(),Cmp);//ÎÈ¶¨ÅÅĞò£¬¿É±£³ÖÅÅĞòÇ°µÄË³Ğò
+  stable_sort(v.begin(),v.end(),Cmp);//ï¿½È¶ï¿½ï¿½ï¿½ï¿½ò£¬¿É±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Ë³ï¿½ï¿½
   for(int i=0; i<(int)v.size(); i++)
     cout<<v[i]<<endl;
   return 0;

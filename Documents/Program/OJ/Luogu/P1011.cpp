@@ -6,7 +6,7 @@
  * @Description: 
  */
 int arr[25][2]={0};
-#include <cstdio>
+#include<cstdio>
 using namespace std;
 int read(){
     int x=0,f=1;char c=getchar();

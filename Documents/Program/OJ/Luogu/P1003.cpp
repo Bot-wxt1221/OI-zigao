@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 
 struct node{
     int a,b,xlen,ylen;

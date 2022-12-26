@@ -1,7 +1,7 @@
-#include <cstdio>
-#include <cstring>
-#include <deque>
-#include <algorithm>
+#include<cstdio>
+#include<cstring>
+#include<deque>
+#include<algorithm>
 //#define file
 
 struct node{

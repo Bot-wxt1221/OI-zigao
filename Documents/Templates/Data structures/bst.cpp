@@ -2,11 +2,11 @@
  * @Author: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
+#include<cstdio>
 //#define file
 
 //************************************************************************************************
-#include <cstring>
+#include<cstring>
 #define BST_DATA_TYPE int
 #define BST_SIZE 100
 struct BSTNode{

@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 #define read(X) {(X)=0;_c=getchar_unlocked();while(_c<'0'||'9'<_c)_c=getchar_unlocked();while('0'<=_c&&_c<='9')(X)=((X)<<3)+((X)<<1)+(_c&15),_c=getchar_unlocked();}
 #define INPUT_DATA_TYPE int
 #define OUTPUT_DATA_TYPE int

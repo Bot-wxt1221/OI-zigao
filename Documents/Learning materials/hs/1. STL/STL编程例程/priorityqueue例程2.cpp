@@ -1,36 +1,36 @@
 
-/*сеох╤сап╣д╩Ы╠╬й╧сц  */
-#include <iostream>
+/*О©╫О©╫О©╫х╤О©╫О©╫п╣д╩О©╫О©╫О©╫й╧О©╫О©╫  */
+#include<iostream>
 #include<functional>
 #include<queue>
 #include<vector>
 using namespace std;
-//вт╤╗рЕсеох╪╤1ё╛йЩж╣юЮпм
+//О©╫т╤О©╫О©╫О©╫О©╫О©╫О©╫х╪О©╫1О©╫О©╫О©╫О©╫ж╣О©╫О©╫О©╫О©╫
 struct cmp1{
     bool operator ()(int &a,int &b){
-        return a<b;//вН╢Сж╣сеох
+        return a<b;//О©╫О©╫О©╫ж╣О©╫О©╫О©╫О©╫
     }
 };
 struct cmp2{
     bool operator ()(int &a,int &b){
-        return a>b;//вНп║ж╣сеох
+        return a>b;//О©╫О©╫п║ж╣О©╫О©╫О©╫О©╫
     }
 };
-//вт╤╗рЕсеох╪╤2,╫А╧╧лЕюЮпм
+//О©╫т╤О©╫О©╫О©╫О©╫О©╫О©╫х╪О©╫2,О©╫А╧╧О©╫О©╫О©╫О©╫О©╫О©╫
 struct node1{
-    int x,y;//╫А╧╧лЕжп╣дЁит╠
-    node1() {}//н╙╥╫╠Ц╦Ёж╣ё╛╡исц╧╧тЛ╨╞йЩ
+    int x,y;//О©╫А╧╧О©╫О©╫О©╫п╣дЁО©╫т╠
+    node1() {}//н╙О©╫О©╫О©╫Ц╦Ёж╣О©╫О©╫О©╫О©╫О©╫ц╧О©╫О©╫Л╨╞О©╫О©╫
     node1(int _x,int _y)
     {
         x = _x;
         y = _y;
     };
     bool operator < (const node1 &a) const {
-        return x<a.x;//╟╢Ёит╠xвН╢Сж╣сеох
+        return x<a.x;//О©╫О©╫О©╫О©╫т╠xО©╫О©╫О©╫ж╣О©╫О©╫О©╫О©╫
     }
 };
 struct node2{
-    int x,y;//╫А╧╧лЕжп╣дЁит╠
+    int x,y;//О©╫А╧╧О©╫О©╫О©╫п╣дЁО©╫т╠
     node2() {}
     node2(int _x,int _y)
     {
@@ -38,13 +38,13 @@ struct node2{
         y = _y;
     };
     bool operator < (const node2 &a) const {
-        return x>a.x;//╟╢Ёит╠xвНп║ж╣сеох
+        return x>a.x;//О©╫О©╫О©╫О©╫т╠xО©╫О©╫п║ж╣О©╫О©╫О©╫О©╫
     }
 };
 
-//вт╤╗рЕсеох╪╤3,╫А╧╧лЕюЮпм
+//О©╫т╤О©╫О©╫О©╫О©╫О©╫О©╫х╪О©╫3,О©╫А╧╧О©╫О©╫О©╫О©╫О©╫О©╫
 struct node3{
-    int x,y;  //╫А╧╧лЕжп╣дЁит╠
+    int x,y;  //О©╫А╧╧О©╫О©╫О©╫п╣дЁО©╫т╠
     node3() {}
     node3(int _x,int _y)
     {
@@ -52,13 +52,13 @@ struct node3{
         y = _y;
     };
 };
-bool operator <(const node3 &a, const node3 &b)//сеох╪╤╤╗рЕтз╫А╧╧лЕмБцФ
+bool operator <(const node3 &a, const node3 &b)//О©╫О©╫О©╫х╪О©╫О©╫О©╫О©╫О©╫О©╫з╫А╧╧О©╫О©╫О©╫О©╫О©╫О©╫
 {
-  return a.x<b.x; //╟╢Ёит╠xвН╢Сж╣сеох
+  return a.x<b.x; //О©╫О©╫О©╫О©╫т╠xО©╫О©╫О©╫ж╣О©╫О©╫О©╫О©╫
 }
 
 struct node4{
-    int x,y;  //╫А╧╧лЕжп╣дЁит╠
+    int x,y;  //О©╫А╧╧О©╫О©╫О©╫п╣дЁО©╫т╠
     node4() {}
     node4(int _x,int _y)
     {
@@ -68,34 +68,34 @@ struct node4{
 };
 bool operator <(const node4 &a, const node4 &b)
 {
-   return a.y>b.y; //╟╢Ёит╠yвНп║ж╣сеох
+   return a.y>b.y; //О©╫О©╫О©╫О©╫т╠yО©╫О©╫п║ж╣О©╫О©╫О©╫О©╫
 }
 
 int a[]={15,7,32,26,97,48,36,89,6,49,67,0};
 int b[]={1,2,5,6,9,8,6,9,7,19,27,0};
 
 int main()
-{   priority_queue<int>que;//╡исцд╛хосеох╪╤╧╧тЛ╤сап
+{   priority_queue<int>que;//О©╫О©╫О©╫О©╫д╛О©╫О©╫О©╫О©╫О©╫х╪О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
 
-    //й╧сцC++вт╢Ь╣д©Б╨╞йЩ<functional>ё╛
-    priority_queue<int,vector<int>,less<int> >que1;//вН╢Сж╣сеох,в╒рБ║╟>>║╠╩А╠╩хон╙╢МнСё╛уБйгсррфтккЦ╥Шё╛кЫртуБюОсц©у╦Я╨е╦Т©╙
-    priority_queue<int,vector<int>,greater<int> >que2;  //вНп║ж╣сеох
+    //й╧О©╫О©╫C++О©╫т╢О©╫О©╫д©Б╨╞О©╫О©╫<functional>О©╫О©╫
+    priority_queue<int,vector<int>,less<int> >que1;//О©╫О©╫О©╫ж╣О©╫О©╫О©╫О©╫,в╒О©╫Б║╟>>О©╫О©╫О©╫А╠╩О©╫О©╫н╙О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ц©у╦О©╫е╦О©╫О©╫О©╫
+    priority_queue<int,vector<int>,greater<int> >que2;  //О©╫О©╫п║ж╣О©╫О©╫О©╫О©╫
 
-    //вт╤╗рЕсеох╪╤1
+    //О©╫т╤О©╫О©╫О©╫О©╫О©╫О©╫х╪О©╫1
     priority_queue<int,vector<int>,cmp1>que3;
     priority_queue<int,vector<int>,cmp2>que4;
 
-   //вт╤╗рЕсеох╪╤2
+   //О©╫т╤О©╫О©╫О©╫О©╫О©╫О©╫х╪О©╫2
     priority_queue<node1>que5;
     priority_queue<node2>que6;
 
-    //вт╤╗рЕсеох╪╤3
+    //О©╫т╤О©╫О©╫О©╫О©╫О©╫О©╫х╪О©╫3
     priority_queue<node3>que7;
     priority_queue<node4>que8;
 
     int i;
     for(i=0;a[i];i++)
-    {//a[i]н╙0й╠мёж╧ё╛йЩвИвН╨Ср╩╦ЖйЩн╙0
+    {//a[i]н╙0й╠мёж╧О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫р╩О©╫О©╫О©╫О©╫н╙0
         que.push(a[i]);
         que1.push(a[i]);
         que2.push(a[i]);
@@ -103,14 +103,14 @@ int main()
         que4.push(a[i]);
     }
      for(i=0;a[i]&&b[i];i++)
-    {//a[i]╩Рb[i]н╙0й╠мёж╧ё╛йЩвИвН╨Ср╩╦ЖйЩн╙0
+    {//a[i]О©╫О©╫b[i]н╙0й╠мёж╧О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫р╩О©╫О©╫О©╫О©╫н╙0
         que5.push(node1(a[i],b[i]));
         que6.push(node2(a[i],b[i]));
         que7.push(node3(a[i],b[i]));
         que8.push(node4(a[i],b[i]));
     }
 
-    cout<<"╡исцд╛хосеох╪╤:"<<endl;
+    cout<<"О©╫О©╫О©╫О©╫д╛О©╫О©╫О©╫О©╫О©╫х╪О©╫:"<<endl;
     cout<<"Queue 0:"<<endl;
     while(!que.empty()){
         cout<<que.top()<<"  ";
@@ -119,7 +119,7 @@ int main()
     cout<<endl;
     cout<<endl;
 
-    cout<<"╡исцм╥нд╪Ч\"functional\"дз╤╗рЕсеох╪╤:"<<endl;
+    cout<<"О©╫О©╫О©╫О©╫м╥О©╫д╪О©╫\"functional\"О©╫з╤О©╫О©╫О©╫О©╫О©╫О©╫х╪О©╫:"<<endl;
     cout<<"Queue 1:"<<endl;
     while(!que1.empty()){
         cout<<que1.top()<<"  ";
@@ -134,7 +134,7 @@ int main()
     cout<<endl;
     cout<<endl;
 
-    cout<<"╡исцвт╤╗рЕсеох╪╤╥╫й╫1:"<<endl;
+    cout<<"О©╫О©╫О©╫О©╫О©╫т╤О©╫О©╫О©╫О©╫О©╫О©╫х╪О©╫О©╫О©╫й╫1:"<<endl;
     cout<<"Queue 3:"<<endl;
     while(!que3.empty()){
         cout<<que3.top()<<"  ";
@@ -149,7 +149,7 @@ int main()
     cout<<endl;
     cout<<endl;
 
-    cout<<"╡исцвт╤╗рЕсеох╪╤╥╫й╫2:"<<endl;
+    cout<<"О©╫О©╫О©╫О©╫О©╫т╤О©╫О©╫О©╫О©╫О©╫О©╫х╪О©╫О©╫О©╫й╫2:"<<endl;
     cout<<"Queue 5:"<<endl;
     while(!que5.empty()){
         cout<<que5.top().x<<"  ";
@@ -164,7 +164,7 @@ int main()
     cout<<endl;
     cout<<endl;
 
-    cout<<"╡исцвт╤╗рЕсеох╪╤╥╫й╫3:"<<endl;
+    cout<<"О©╫О©╫О©╫О©╫О©╫т╤О©╫О©╫О©╫О©╫О©╫О©╫х╪О©╫О©╫О©╫й╫3:"<<endl;
     cout<<"Queue 7:"<<endl;
     while(!que7.empty()){
         cout<<que7.top().x<<"  ";

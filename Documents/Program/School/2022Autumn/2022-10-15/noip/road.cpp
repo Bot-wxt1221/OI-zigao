@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <stack>
+#include<cstdio>
+#include<stack>
 //#define file
 
 struct node{

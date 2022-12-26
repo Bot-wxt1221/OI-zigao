@@ -2,7 +2,7 @@
  * @Author: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
+#include<cstdio>
 //#define file
 using namespace std;
 int read();

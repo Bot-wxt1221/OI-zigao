@@ -5,7 +5,7 @@
  * @LastEditors: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
+#include<cstdio>
 //quik read
 int read(){
     int x=0,f=1;char c=getchar();

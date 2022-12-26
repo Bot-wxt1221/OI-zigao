@@ -1,9 +1,9 @@
 // Millionaire
 // GCJ 2008 APAC local onsites C
 
-#include <cstdio>
-#include <cstring>
-#include <algorithm>
+#include<cstdio>
+#include<cstring>
+#include<algorithm>
 const int MAXR = 1 << 15 + 2;
 int N, M, X;
 double P, dp[2][MAXR];
@@ -31,5 +31,5 @@ int main() {
         printf("Case #%d: %.6lf\n", k, prv[i]);
     }
     fclose(stdin);
-    fclose(stdout);¡¡¡¡ return 0;
+    fclose(stdout);ï¿½ï¿½ï¿½ï¿½ return 0;
 }

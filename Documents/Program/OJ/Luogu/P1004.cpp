@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 int arr[12][12];
 #define INPUT_DATA_TYPE int
 

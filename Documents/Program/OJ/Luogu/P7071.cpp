@@ -1,6 +1,6 @@
-#include <cstdio>
-#include <cstdlib>
-#include <algorithm>
+#include<cstdio>
+#include<cstdlib>
+#include<algorithm>
 
 int read();
 

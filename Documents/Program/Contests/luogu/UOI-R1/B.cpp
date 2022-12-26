@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <cstring>
+#include<cstdio>
+#include<cstring>
 // #define file
 #define INPUT_DATA_TYPE int
 #define OUTPUT_DATA_TYPE int

@@ -1,6 +1,6 @@
-#include <cstdio>
-#include <cstring>
-#include <queue>
+#include<cstdio>
+#include<cstring>
+#include<queue>
 #define INPUT_DATA_TYPE int
 #define MAXM (200000+10)
 #define MAXN (100000+10)

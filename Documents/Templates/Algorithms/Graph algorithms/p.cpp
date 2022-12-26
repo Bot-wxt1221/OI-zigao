@@ -38,8 +38,8 @@ Bellman-Ford/SPFA input:
 Bellman-Ford/SPFA output:
 0 -1 -2
  */
-#include <cstdio>
-#include <cstring>
+#include<cstdio>
+#include<cstring>
 
 const int MAX_N=1000;
 const int MAX_M=1000;
@@ -57,8 +57,8 @@ struct edge{
 		next=-1;
 	}
 };
-#include "queue.h"
-#include "heap.h"
+#include"queue.h"
+#include"heap.h"
 int matrix[MAX_N][MAX_N],head[MAX_N],cnt,s,n,m;
 bool book[MAX_N];
 edge list[MAX_M];

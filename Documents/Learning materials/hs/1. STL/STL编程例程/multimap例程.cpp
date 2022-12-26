@@ -1,24 +1,24 @@
-//multimapÀı³Ì
-#include <bits/stdc++.h>//Ê¹ÓÃÍòÄÜÍ·ÎÄ¼ş£¬ÎŞĞèĞ´#include <map> 
+//multimapï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>//Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·#includeĞ´#include <map> 
 using namespace std;
 
 int main()
 {
-  multimap <string, double> mp;//¶¨Òåmap¶ÔÏó£¬µ±Ç°Ã»ÓĞÈÎºÎÔªËØ
-  mp.insert(pair<string, double>("Jack", 300.5));//²åÈëÔªËØ
+  multimap <string, double> mp;//ï¿½ï¿½ï¿½ï¿½mapï¿½ï¿½ï¿½ó£¬µï¿½Ç°Ã»ï¿½ï¿½ï¿½Îºï¿½Ôªï¿½ï¿½
+  mp.insert(pair<string, double>("Jack", 300.5));//ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
   mp.insert(pair<string, double>("Kity", 200));
   mp.insert(pair<string, double>("Memi", 500));
-  mp.insert(pair<string, double>("Jack", 306));//ÖØ¸´²åÈë¼üÖµ"Jack"
+  mp.insert(pair<string, double>("Jack", 306));//ï¿½Ø¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ"Jack"
 
   multimap <string, double>:: iterator it;
-  mp.erase("Jack");//É¾³ı¼üÖµµÈÓÚ"Jack"µÄÔªËØ
-  for(it=mp.begin(); it != mp.end(); it++)//Ç°Ïòµü´úÆ÷ÖĞĞò±éÀúmultimap
+  mp.erase("Jack");//É¾ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½"Jack"ï¿½ï¿½Ôªï¿½ï¿½
+  for(it=mp.begin(); it != mp.end(); it++)//Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½multimap
     cout << (*it).first << " " << (*it).second << endl;
 
-  it = mp.find("Nacy");//ÔªËØµÄ²éÕÒ
-  if(it != mp.end())    //ÕÒµ½
+  it = mp.find("Nacy");//Ôªï¿½ØµÄ²ï¿½ï¿½ï¿½
+  if(it != mp.end())    //ï¿½Òµï¿½
     cout << (*it).first << " " << (*it).second << endl;
-  else    //Ã»ÕÒµ½
+  else    //Ã»ï¿½Òµï¿½
     cout << "Not find it!" << endl;
   return 0;
 }

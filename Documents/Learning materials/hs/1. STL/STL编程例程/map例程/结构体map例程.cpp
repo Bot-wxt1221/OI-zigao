@@ -1,18 +1,18 @@
-//½á¹¹ÌåmapÀý³Ì
-#include <bits/stdc++.h>
+//ï¿½á¹¹ï¿½ï¿½mapï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 
-struct Info                             //Ñ§ÉúÐÅÏ¢½á¹¹Ìå
+struct Info                             //Ñ§ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½á¹¹ï¿½ï¿½
 {
-  char *xm;                             //ÐÕÃû
-  int y;                                //Äê·Ý
-  char *d;                              //µØÖ·
+  char *xm;                             //ï¿½ï¿½ï¿½ï¿½
+  int y;                                //ï¿½ï¿½ï¿½
+  char *d;                              //ï¿½ï¿½Ö·
 };
 
-struct Record                           //Ñ§Éú¼ÇÂ¼½á¹¹Ìå
+struct Record                           //Ñ§ï¿½ï¿½ï¿½ï¿½Â¼ï¿½á¹¹ï¿½ï¿½
 {
-  int id;                               //Ñ§ºÅ×÷¼üÖµ
-  Info sf;                              //Ñ§ÉúÐÅÏ¢×÷Ó³ÕÕÊý¾Ý
+  int id;                               //Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+  Info sf;                              //Ñ§ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 };
 
 int main()
@@ -23,16 +23,16 @@ int main()
     {2,"wang",29,"shanghai"},
     {3,"zhang",30,"shengzheng"}
   };
-  map<int,Info, greater<int> >m;        //°´¼üÖµÓÉ´óµ½Ð¡ÅÅÐò
-  for(int j=0; j<3; j++)                //×°ÈëÈý¸öÑ§ÉúÐÅÏ¢
+  map<int,Info, greater<int> >m;        //ï¿½ï¿½ï¿½ï¿½Öµï¿½É´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
+  for(int j=0; j<3; j++)                //×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½Ï¢
     m[srArray[j].id]=srArray[j].sf;
   Record s1= {5,"Ling",23,"XINJIANG"};
-  m.insert(make_pair(s1.id,s1.sf));     //²åÈëÐÂÉúÐÅÏ¢
+  m.insert(make_pair(s1.id,s1.sf));     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
   map<int,Info>::iterator i;
-  for(i=m.begin(); i!=m.end(); i++)     //ÕýÏò±éÀú
+  for(i=m.begin(); i!=m.end(); i++)     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     cout<<(*i).first<<' '<<(*i).second.xm<<' '<<(*i).second.d<<'\n';
-  i=m.find(2);                          //²éÕÒ¼üÖµÎª2µÄ¼ÇÂ¼²¢Êä³ö
-  cout<<"¼üÖµ2£º"<<(*i).second.xm<<' '<<(*i).second.d;
+  i=m.find(2);                          //ï¿½ï¿½ï¿½Ò¼ï¿½ÖµÎª2ï¿½Ä¼ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+  cout<<"ï¿½ï¿½Öµ2ï¿½ï¿½"<<(*i).second.xm<<' '<<(*i).second.d;
   return 0;
 }
 

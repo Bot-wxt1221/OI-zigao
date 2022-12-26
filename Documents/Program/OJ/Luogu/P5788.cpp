@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 #define max_n 3000000+10
 // #define max_n 30+10
 

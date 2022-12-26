@@ -1,6 +1,6 @@
-#include <cstdio>
+#include<cstdio>
 //**************************************************************************************************
-#include <cstring>
+#include<cstring>
 #define mod 10007
 #define queue_type int
 const int QUEUE_SIZE = 10000+10;

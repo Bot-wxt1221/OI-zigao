@@ -1,13 +1,13 @@
-//Time+TimeµÄ²Ù×÷
-#include <bits/stdc++.h>
+//Time+Timeï¿½Ä²ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 
 struct Time
 {
-  int H,M,S;                          //Ê±£¬·Ö£¬Ãë
-  Time operator+ (const Time &b)const //ÖØÔØÔËËã·û"+"
+  int H,M,S;                          //Ê±ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½
+  Time operator+ (const Time &b)const //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+"
   {
-    return Time {H+b.H,M+b.M,S+b.S};  //½öÎªÑÝÊ¾£¬²»¿¼ÂÇ½øÎ»
+    return Time {H+b.H,M+b.M,S+b.S};  //ï¿½ï¿½Îªï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç½ï¿½Î»
   }
 } T1= {3,2,4},T2= {5,20,30},T3;
 

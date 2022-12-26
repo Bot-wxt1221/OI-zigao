@@ -1,5 +1,5 @@
-//×îÖµÀı³Ì
-#include <bits/stdc++.h>//Ê¹ÓÃÍòÄÜÍ·ÎÄ¼ş£¬ÎŞĞèĞ´#include <algorithm> 
+//ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>//Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·#includeĞ´#include <algorithm> 
 using namespace std;
 
 bool strComp(const char *s1,const char *s2)
@@ -9,7 +9,7 @@ bool strComp(const char *s1,const char *s2)
 
 int main()
 {
-  cout<<min((char*)"green",(char*)"girl",strComp)<<endl;//´òÓ¡girl
+  cout<<min((char*)"green",(char*)"girl",strComp)<<endl;//ï¿½ï¿½Ó¡girl
   cout<<min(100,30)<<endl;
   cout<<max(100,30)<<endl;
   list<int> l;
@@ -20,18 +20,18 @@ int main()
   l.push_back(20);
   l.push_back(18);
   l.push_back(1);
-  cout<<*min_element(l.begin(),l.end())<<endl;//Çø¼ä×îĞ¡ÔªËØ
-  cout<<*max_element(l.begin(),l.end())<<endl;//Çø¼ä×î´óÔªËØ
-  //×ÖµäĞò±È½Ï´óĞ¡
+  cout<<*min_element(l.begin(),l.end())<<endl;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¡Ôªï¿½ï¿½
+  cout<<*max_element(l.begin(),l.end())<<endl;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+  //ï¿½Öµï¿½ï¿½ï¿½È½Ï´ï¿½Ğ¡
   char * s1="house";
   char *s2="book";
   const int len1=sizeof("house")/sizeof(char);
   const int len2=sizeof("book")/sizeof(char);
-  bool f=lexicographical_compare(s1,s1+len1,s2,s2+len2);//°´×ÖµäĞò±È½ÏÁ½ĞòÁĞ
+  bool f=lexicographical_compare(s1,s1+len1,s2,s2+len2);//ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   if (f)
-    cout<<"houseÔÚbookÇ°"<<endl;
+    cout<<"houseï¿½ï¿½bookÇ°"<<endl;
   else
-    cout<<"houseÔÚbookºó"<<endl;
+    cout<<"houseï¿½ï¿½bookï¿½ï¿½"<<endl;
   return 0;
 }
 

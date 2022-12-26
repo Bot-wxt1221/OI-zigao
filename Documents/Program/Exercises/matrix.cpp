@@ -1,9 +1,9 @@
-#include <cstdio>
-#include <algorithm>
+#include<cstdio>
+#include<algorithm>
 //#define file
 
 //************************************************************************************************
-#include <cstring>
+#include<cstring>
 #define MATRIX_MOD %MOD
 #define MATRIX_DATA_TYPE unsigned long long
 #define MUL_TYPE unsigned long long

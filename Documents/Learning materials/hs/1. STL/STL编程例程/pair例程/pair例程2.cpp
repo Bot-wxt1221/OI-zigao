@@ -1,13 +1,13 @@
-//pairÀı³Ì2
-#include <bits/stdc++.h>
+//pairï¿½ï¿½ï¿½ï¿½2
+#include<bits/stdc++.h>
 using namespace std;
-typedef pair<string, double> Record;//typedef¼ò»¯pairµÄÉùÃ÷ÎªRecord
+typedef pair<string, double> Record;//typedefï¿½ï¿½pairï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªRecord
 
 int main()
 {
   Record p1 = make_pair("zxh", 100);
   Record p2;
-  p2 = p1; //ÖØÔØÔËËã·û"="
+  p2 = p1; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"="
   cout<<p2.first<<' '<< p2.second<<endl;
   return 0;
 }

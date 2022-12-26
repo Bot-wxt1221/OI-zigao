@@ -1,16 +1,16 @@
-//ÆÕÍ¨Æ½ºâÊ÷
-#include <bits/stdc++.h>
+//ï¿½ï¿½Í¨Æ½ï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 
-inline int Read()         //¹Ø¼ü×Öinline°Ñº¯ÊýÖ¸¶¨ÎªÔËÐÐËÙ¶È¸ü¿ìµÄÄÚÁªº¯Êý
+inline int Read()         //ï¿½Ø¼ï¿½ï¿½ï¿½inlineï¿½Ñºï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ù¶È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 {
   int x=0,f=1;
-  char ch=getchar();      //Ê¹ÓÃgetchar±Èscanf´óÔ¼¿ìÊ®±¶
+  char ch=getchar();      //Ê¹ï¿½ï¿½getcharï¿½ï¿½scanfï¿½ï¿½Ô¼ï¿½ï¿½Ê®ï¿½ï¿½
   for(; ch<'0' || ch>'9'; ch=getchar())
     if(ch=='-')
       f=-1;
   for(; ch>='0' && ch<='9'; ch=getchar())
-    x=(x<<3)+(x<<1)+ch-'0';//(x<<3)+(x<<1)Ïàµ±ÓÚx*10
+    x=(x<<3)+(x<<1)+ch-'0';//(x<<3)+(x<<1)ï¿½àµ±ï¿½ï¿½x*10
   return x*f;
 }
 
@@ -18,20 +18,20 @@ int main()
 {
   freopen("BalanceTree.in","r",stdin);
   freopen("BalanceTree.out","w",stdout);
-  int n=Read();            //Read()ÓÃÓÚ¿ìËÙ¶ÁÈ¡ÕûÊý
+  int n=Read();            //Read()ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½Ù¶ï¿½È¡ï¿½ï¿½ï¿½ï¿½
   vector<int> vec;
-  vec.reserve(200000);     //Ô¤Áô¿Õ¼ä
+  vec.reserve(200000);     //Ô¤ï¿½ï¿½ï¿½Õ¼ï¿½
   int f,x;
   for(int i=1; i<=n; i++)
   {
     f=Read(),x=Read();
     switch(f)
     {
-        //upper_boundÕÒ³öÓÐÐòÊýÁÐÖÐÊ×¸ö´óÓÚÄ³ÖµµÄÔªËØ
+        //upper_boundï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¸ï¿½ï¿½ï¿½ï¿½ï¿½Ä³Öµï¿½ï¿½Ôªï¿½ï¿½
       case 1:
         vec.insert(upper_bound(vec.begin(),vec.end(),x),x);
         break;
-        //lower_boundÓÃÓÚÕÒ³öÓÐÐòÊýÁÐÖÐÊ×¸ö´óÓÚµÈÓÚÄ³ÖµµÄÔªËØ
+        //lower_boundï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¸ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½Ä³Öµï¿½ï¿½Ôªï¿½ï¿½
       case 2:
         vec.erase(lower_bound(vec.begin(),vec.end(),x));
         break;

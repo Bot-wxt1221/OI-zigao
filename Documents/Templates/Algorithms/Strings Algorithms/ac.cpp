@@ -1,9 +1,9 @@
-#include <cstdio>
-#include <algorithm>
+#include<cstdio>
+#include<algorithm>
 #define file
 
 //************************************************************************************************
-#include <cstring>
+#include<cstring>
 #define AC_TYPE char
 #define QUEUE_HEAP int
 const int MAX_N=200000+10;

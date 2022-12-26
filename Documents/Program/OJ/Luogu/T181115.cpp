@@ -2,8 +2,8 @@
  * @Author: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
-#include <cstring>
+#include<cstdio>
+#include<cstring>
 //#define file
 using namespace std;
 int read();

@@ -1,5 +1,5 @@
-//pair µÄ±È½Ï
-#include <bits/stdc++.h>
+//pair ï¿½Ä±È½ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 
 int main ()
@@ -7,9 +7,9 @@ int main ()
   pair<int,char> A (10,'z');
   pair<int,char> B (90,'a');
   if (A==B)
-    cout << "ÏàµÈ\n";
+    cout << "ï¿½ï¿½ï¿½\n";
   if (A!=B)
-    cout << "²»ÏàµÈ\n";
+    cout << "ï¿½ï¿½ï¿½ï¿½ï¿½\n";
   if (A< B)
     cout << "A<B\n";
   if (A>B)

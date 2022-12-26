@@ -1,5 +1,5 @@
-//¶ÑÅÅĞòÀı³Ì
-#include <bits/stdc++.h>//Ê¹ÓÃÍòÄÜÍ·ÎÄ¼ş£¬ÎŞĞèĞ´#include <algorithm> 
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>//Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·#includeĞ´#include <algorithm> 
 using namespace std;
 
 void show(vector<int> h)
@@ -14,21 +14,21 @@ int main()
   int a[9]= {0,1,2,3,4,8,9,3,5};
   vector<int> V(a,a+9);
 
-  make_heap(V.begin(),V.end());//½¨¶Ñ£¬Ä¬ÈÏÎªLess,¼´×î´óÔªËØ·ÅÔÚµÚÒ»¸ö
-  //make_heap(V.begin(),V.end(),greater<int>());//½¨¶Ñ,×îĞ¡ÔªËØ·ÅÔÚµÚÒ»¸ö
+  make_heap(V.begin(),V.end());//ï¿½ï¿½ï¿½Ñ£ï¿½Ä¬ï¿½ï¿½ÎªLess,ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø·ï¿½ï¿½Úµï¿½Ò»ï¿½ï¿½
+  //make_heap(V.begin(),V.end(),greater<int>());//ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½Ğ¡Ôªï¿½Ø·ï¿½ï¿½Úµï¿½Ò»ï¿½ï¿½
   show(V);
 
   V.push_back(7);
-  push_heap(V.begin(),V.end());//ĞÂÌí¼ÓÒ»¸öÔªËØÔÚÄ©Î²£¬È»ºóÖØĞÂµ÷Õû¶ÑĞò
+  push_heap(V.begin(),V.end());//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½Ä©Î²ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   show(V);
 
-  pop_heap(V.begin(),V.end());//°Ñ¶Ñ¶¥ÔªËØÈ¡³öÀ´·Åµ½Ä©Î²£¬ÓÃÔ­À´Ä©Î²ÔªËØÈ¥Ìæ´ú
+  pop_heap(V.begin(),V.end());//ï¿½Ñ¶Ñ¶ï¿½Ôªï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Åµï¿½Ä©Î²ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½Ä©Î²Ôªï¿½ï¿½È¥ï¿½ï¿½ï¿½
   show(V);
   cout<<V.back()<<endl;
   V.pop_back();
   show(V);
 
-  sort_heap(V.begin(),V.end());//´ÓĞ¡µ½´óÅÅĞòºó¾Í²»ÔÙÊÇÒ»¸öºÏ·¨µÄheapÁË
+  sort_heap(V.begin(),V.end());//ï¿½ï¿½Ğ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½heapï¿½ï¿½
   show(V);
   return 0;
 }

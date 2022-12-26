@@ -1,12 +1,12 @@
-#include <cstdio>
+#include<cstdio>
 
 // #define file
 #define INPUT_DATA_TYPE long long
 #define OUTPUT_DATA_TYPE long long
 
 //************************************************************************************************
-#include <cstring>
-#include <complex>
+#include<cstring>
+#include<complex>
 //************************************************************************************************
 
 INPUT_DATA_TYPE read();

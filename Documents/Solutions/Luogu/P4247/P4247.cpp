@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <cstring>
+#include<cstdio>
+#include<cstring>
 const int mod=19940417;
 #define _mid int mid=((l+r)>>1)
 #define _lChild (p<<1)

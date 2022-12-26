@@ -1,5 +1,5 @@
-//µç»°ÁÐ±í
-#include <bits/stdc++.h>
+//ï¿½ç»°ï¿½Ð±ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 vector <string> v;
 char ch[10];
@@ -7,7 +7,7 @@ char ch[10];
 int Check(int n)
 {
   for (int i=0; i<n-1; i++)
-    if (v[i+1].find(v[i])==0)//find·µ»ØÄ³×Ö´®ÔÚÁí¸ö×Ö´®ÖÐÊ×´Î³öÏÖÎ»ÖÃ
+    if (v[i+1].find(v[i])==0)//findï¿½ï¿½ï¿½ï¿½Ä³ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½×´Î³ï¿½ï¿½ï¿½Î»ï¿½ï¿½
       return 0;
   return 1;
 }
@@ -18,15 +18,15 @@ int main()
   freopen("telephone.out","w",stdout);
   int n;
   scanf("%d",&n);
-  while (~scanf("%d",&n))   //scanf¶ÁÈ¡Êý¾ÝÊ§°Ü·µ»Ø-1£¬È¡·´Îª0
+  while (~scanf("%d",&n))   //scanfï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü·ï¿½ï¿½ï¿½-1ï¿½ï¿½È¡ï¿½ï¿½Îª0
   {
     v.clear();
     for (int i=0; i<n; i++)
     {
-      scanf("%s",&ch);      //scanf±ÈcinËÙ¶È¿ì£¬¶ÁÈë×Ö·û´®²»»á³¬Ê±
+      scanf("%s",&ch);      //scanfï¿½ï¿½cinï¿½Ù¶È¿ì£¬ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á³¬Ê±
       v.push_back(string(ch));
     }
-    sort(v.begin(),v.end()); //¶Ôvector´ÓÐ¡µ½´óÅÅÐò
+    sort(v.begin(),v.end()); //ï¿½ï¿½vectorï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     printf("%s\n",Check(n)==0?"NO":"YES");
   }
   return 0;

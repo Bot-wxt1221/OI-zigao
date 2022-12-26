@@ -1,9 +1,9 @@
-#include <iostream>
-#include <cstdio>
-#include <cstring>
-#include <cmath>
-#include <algorithm>
-#include <queue>
+#include<iostream>
+#include<cstdio>
+#include<cstring>
+#include<cmath>
+#include<algorithm>
+#include<queue>
 #define ll long long
 using namespace std;
 struct node
@@ -25,7 +25,7 @@ s = d - g; t = d + g;
 {
 s = 1; t = d + g;
 }
-// Ã¿´ÎÌøµÄ¾àÀëÇø¼ä[s, t]
+// Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[s, t]
 l = r = 1;
 q[1] = 0;
 f[0] = 0;

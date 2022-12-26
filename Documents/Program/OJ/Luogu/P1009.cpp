@@ -41,16 +41,16 @@
 
 //**************************************************************************************************************************************************************//
 
-#include <iostream>
-#include <algorithm>
-#include <cmath>
-#include <cstring>
-#include <cstdio>
-#include <cstdlib>
-#include <ctime>
-#include <string>
-#include <vector>
-#include <complex>
+#include<iostream>
+#include<algorithm>
+#include<cmath>
+#include<cstring>
+#include<cstdio>
+#include<cstdlib>
+#include<ctime>
+#include<string>
+#include<vector>
+#include<complex>
 const double _pi=acos(-1);
 
 class _fast_Fourier_transform

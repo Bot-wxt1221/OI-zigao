@@ -5,7 +5,7 @@
  * @LastEditors: Zi_Gao
  * @Description: 
  */
-#include <iostream>
+#include<iostream>
 using namespace std;
 
 int main()

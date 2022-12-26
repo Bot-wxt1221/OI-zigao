@@ -5,7 +5,7 @@
  * @LastEditors: Zi_Gao
  * @Description: Cantor表
  */
-#include <cstdio>
+#include<cstdio>
 int gcd(int a,int b){
 	if(a%b==0){
 		return b;

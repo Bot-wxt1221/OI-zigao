@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <algorithm>
+#include<cstdio>
+#include<algorithm>
 #define maxn (500+10)
 #define maxw (45000+10)
 

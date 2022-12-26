@@ -2,11 +2,11 @@
  * @Author: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
+#include<cstdio>
 //#define file
 
 //************************************************************************************************
-#include <cstring>
+#include<cstring>
 #define M >
 #define mm(a,b) ((a)M(b)?(a):(b))
 #define ST_DATA_TYPE int

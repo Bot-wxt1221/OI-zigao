@@ -1,23 +1,23 @@
-//µü´úÆ÷·ÃÎÊvector
-#include <bits/stdc++.h>
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vector
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
 {
   int j;
   vector<int> v;
-  v.reserve(30);                         //µ÷ÕûÊý¾Ý¿Õ¼ä´óÐ¡
+  v.reserve(30);                         //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿Õ¼ï¿½ï¿½Ð¡
   for(int i=0; i<10; i++)
-    v.push_back(i);                      //Î²¶Ë²åÈëÐÂÔªËØ
-  vector<int>::iterator i;               //¶¨ÒåvectorµÄµü´úÆ÷i
-  for(i=v.begin(); i!=v.end(); i++)      //µü´úÆ÷±éÀú
+    v.push_back(i);                      //Î²ï¿½Ë²ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+  vector<int>::iterator i;               //ï¿½ï¿½ï¿½ï¿½vectorï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½i
+  for(i=v.begin(); i!=v.end(); i++)      //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     cout<<*i<<" ";
-  cout<<"\n vÖÐµÄÔªËØ¸öÊý:"<<v.size()<<'\n';//ÔªËØÊµ¼Ê¸öÊý
-  reverse(v.begin(),v.end());            //·´×ª
-  for(i=v.begin(); i!=v.end(); i++)      //µü´úÆ÷±éÀú
+  cout<<"\n vï¿½Ðµï¿½Ôªï¿½Ø¸ï¿½ï¿½ï¿½:"<<v.size()<<'\n';//Ôªï¿½ï¿½Êµï¿½Ê¸ï¿½ï¿½ï¿½
+  reverse(v.begin(),v.end());            //ï¿½ï¿½×ª
+  for(i=v.begin(); i!=v.end(); i++)      //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     cout<<*i<<" ";
-  v.clear();                             //È«²¿Çå¿ÕÔªËØ
-  cout<<"\n vÊÇ·ñÎª¿Õ:"<<v.empty()<<'\n'; //ÅÐ¶ÏÊÇ·ñÎª¿Õ
+  v.clear();                             //È«ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+  cout<<"\n vï¿½Ç·ï¿½Îªï¿½ï¿½:"<<v.empty()<<'\n'; //ï¿½Ð¶ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½
   return 0;
 }
 

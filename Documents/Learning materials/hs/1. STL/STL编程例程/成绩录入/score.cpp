@@ -1,7 +1,7 @@
-//pair学生成绩录入
-#include <bits/stdc++.h>
+//pair学锟斤拷锟缴硷拷录锟斤拷
+#include<bits/stdc++.h>
 using namespace std;
-typedef pair<string, double> p;//使用typedef简化pair的声明为p
+typedef pair<string, double> p;//使锟斤拷typedef锟斤拷pair锟斤拷锟斤拷锟斤拷为p
 
 int main()
 {

@@ -5,8 +5,8 @@
  * @LastEditors: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
-#include <cstring>
+#include<cstdio>
+#include<cstring>
 int main(){
     int l;
     scanf("%d",&l);

@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 #define maxn (1000+10)
 #define mx(a,b) ((a)>(b)?(a):(b))
 

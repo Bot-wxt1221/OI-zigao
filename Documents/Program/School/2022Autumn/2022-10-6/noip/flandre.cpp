@@ -1,6 +1,6 @@
-#include <cstdio>
-#include <set>
-#include <algorithm>
+#include<cstdio>
+#include<set>
+#include<algorithm>
 #define file
 
 //************************************************************************************************

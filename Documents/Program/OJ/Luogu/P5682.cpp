@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <algorithm>
+#include<cstdio>
+#include<algorithm>
 
 int read();
 bool cmp(int a, int b){

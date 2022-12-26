@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 #define max(a,b) (a)>(b)?(a):(b)
 #define maxm 100+10
 #define maxw 1000+10

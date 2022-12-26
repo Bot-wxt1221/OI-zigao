@@ -1,5 +1,5 @@
-//sort¶Ô×Ö·ûÅÅÐò
-#include <bits/stdc++.h>
+//sortï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()

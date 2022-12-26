@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <bitset>
+#include<cstdio>
+#include<bitset>
 //#define file
 #define INPUT_DATA_TYPE int
 

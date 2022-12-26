@@ -1,5 +1,5 @@
-//½á¹¹ÌåÈÝÆ÷µÄvector
-#include <bits/stdc++.h>
+//ï¿½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vector
+#include<bits/stdc++.h>
 using namespace std;
 
 struct stu
@@ -10,7 +10,7 @@ struct stu
 int main()
 {
   int j;
-  vector<stu> v1;                     //½á¹¹ÌåÈÝÆ÷
+  vector<stu> v1;                     //ï¿½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   vector<stu> v2;
   struct stu a= {1,2};
   struct stu b= {2,3};
@@ -21,11 +21,11 @@ int main()
   v2.push_back(c);
   v2.push_back(b);
   v2.push_back(a);
-  swap(v1,v2);                        //Á½½á¹¹ÌåÔªËØ½»»»
-  for(int i=0; i<v1.size(); i++)      //Êä³öv1ËùÓÐÔªËØ
+  swap(v1,v2);                        //ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½Ôªï¿½Ø½ï¿½ï¿½ï¿½
+  for(int i=0; i<v1.size(); i++)      //ï¿½ï¿½ï¿½v1ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
     cout<<v1[i].x<<" "<<v1[i].y<<endl;
   cout<<"\n";
-  for(int i=0; i<v2.size(); i++)      //Êä³öv2ËùÓÐÔªËØ
+  for(int i=0; i<v2.size(); i++)      //ï¿½ï¿½ï¿½v2ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
     cout<<v2[i].x<<" "<<v2[i].y<<endl;
   return 0;
 }

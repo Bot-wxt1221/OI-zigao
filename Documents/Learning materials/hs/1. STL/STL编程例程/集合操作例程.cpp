@@ -1,10 +1,10 @@
-//¼¯ºÏ²Ù×÷Àı³Ì
-#include <bits/stdc++.h>//Ê¹ÓÃÍòÄÜÍ·ÎÄ¼ş£¬ÎŞĞèĞ´#include <algorithm> 
+//ï¿½ï¿½ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>//Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·#includeĞ´#include <algorithm> 
 using namespace std;
 
 void print(int c[])
 {
-  for(int i=0; i<10; i++) //ÎªÎÈ¶¨ÅÅĞò
+  for(int i=0; i<10; i++) //Îªï¿½È¶ï¿½ï¿½ï¿½ï¿½ï¿½
     cout<<c[i]<<' ';
   cout<<endl;
 }
@@ -16,16 +16,16 @@ int main()
   int lena=sizeof(a)/sizeof(int);
   int lenb=sizeof(b)/sizeof(int);
   int c[]= {0,0,0,0,0,0,0,0,0,0};
-  set_union(a,a+lena,b,b+lenb,c);//Çó²¢¼¯
+  set_union(a,a+lena,b,b+lenb,c);//ï¿½ó²¢¼ï¿½
   print(c);
   memset(c,0,sizeof(c));
-  set_intersection(a,a+lena,b,b+lenb,c);//Çó½»¼¯
+  set_intersection(a,a+lena,b,b+lenb,c);//ï¿½ó½»¼ï¿½
   print(c);
-  //Çó²î£¬ËùÓĞÊôÓÚÇø¼ä1¶ø²»ÊôÓÚÇø¼ä2µÄÔªËØ£¬ÅÅĞòĞ´Èëc
+  //ï¿½ï¿½î£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Ôªï¿½Ø£ï¿½ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½ï¿½c
   memset(c,0,sizeof(c));
   set_difference(a,a+lena,b,b+lenb,c);
   print(c);
-  //¼¯ºÏÇóÒì£¬°ÑÁ½¸ö²»Í¬Ê±ÊôÓÚÁ½¸öÇø¼äµÄÔªËØ£¬ÅÅĞòĞ´Èëc
+  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½ï¿½c
   memset(c,0,sizeof(c));
   set_symmetric_difference(a,a+lena,b,b+lenb,c);
   print(c);

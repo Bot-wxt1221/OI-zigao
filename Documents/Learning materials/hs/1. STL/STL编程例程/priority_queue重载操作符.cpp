@@ -1,12 +1,12 @@
-//priority_queue重载操作符
-#include <bits/stdc++.h>//使用万能头文件，无需写#include <queue> 
+//priority_queue锟斤拷锟截诧拷锟斤拷锟斤拷
+#include<bits/stdc++.h>//使锟斤拷锟斤拷锟斤拷头#include写#include <queue> 
 using namespace std;
 
 struct cmp
 {
-  bool operator() (const int &a,const int &b)//重载"()"操作符
+  bool operator() (const int &a,const int &b)//锟斤拷锟斤拷"()"锟斤拷锟斤拷锟斤拷
   {
-    return a>b;//由小到大排列用">"，否则用"<"
+    return a>b;//锟斤拷小锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷">"锟斤拷锟斤拷锟斤拷锟斤拷"<"
   }
 };
 

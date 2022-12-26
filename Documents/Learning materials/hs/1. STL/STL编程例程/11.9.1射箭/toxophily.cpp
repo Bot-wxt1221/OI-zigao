@@ -1,5 +1,5 @@
-//Éä¼ý
-#include <bits/stdc++.h>
+//ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 
 map <int,int> Map;

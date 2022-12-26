@@ -1,5 +1,5 @@
-//»¶ÀÖÊý
-#include <bits/stdc++.h>
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 int s[10000],n,i;
 int f=0;
@@ -12,8 +12,8 @@ int main()
   for(i=0; i<n; i++)
     scanf("%d", &s[i]);
   for(i=0; i<n; ++i)
-    s[i]=fabs(s[i]-s[i+1]);//Ìæ»»ÎªÏàÁÚÁ½¸öÊýµÄ²î
-  sort(s,s+n);//¿ìÅÅ
+    s[i]=fabs(s[i]-s[i+1]);//ï¿½æ»»Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½
+  sort(s,s+n);//ï¿½ï¿½ï¿½ï¿½
   for(i=1; i<n; i++)
     if(s[i-1]!=i)
     {

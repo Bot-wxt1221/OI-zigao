@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 #define INPUT_DATA_TYPE char
 #define OUTPUT_DATA_TYPE int
 #define _ui unsigned int

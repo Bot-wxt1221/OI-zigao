@@ -1,10 +1,10 @@
-//pair例程1
-#include <bits/stdc++.h>//使用万能头文件，无需写#include <utility>
+//pair锟斤拷锟斤拷1
+#include<bits/stdc++.h>//使锟斤拷锟斤拷锟斤拷头#include写#include <utility>
 using namespace std;
 
 int main()
 {
-  pair<int, double> p1;  //使用默认构造函数
+  pair<int, double> p1;  //使锟斤拷默锟较癸拷锟届函锟斤拷
   p1.first = 10;
   p1.second = 12.5;
   cout<<p1.first<<' '<< p1.second<<endl;

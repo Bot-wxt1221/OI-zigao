@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 
 int read();
 int t[4000105],cnt[4000105],sum[4000105],f[4000105];

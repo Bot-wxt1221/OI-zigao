@@ -1,12 +1,12 @@
-#include <cstdio>
+#include<cstdio>
 
 // #define file
 #define INPUT_DATA_TYPE int
 #define OUTPUT_DATA_TYPE int
 
 //************************************************************************************************
-#include <cstring>
-#include <complex>
+#include<cstring>
+#include<complex>
 #define POL_SIZE (4000000+10)
 
 const double pi=acos(-1);

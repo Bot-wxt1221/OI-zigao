@@ -2,9 +2,9 @@
  * @Author: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
-#include <cstring>
-#include <algorithm>
+#include<cstdio>
+#include<cstring>
+#include<algorithm>
 //#define file
 int read();
 

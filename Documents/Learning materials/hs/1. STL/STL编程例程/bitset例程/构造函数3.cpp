@@ -1,5 +1,5 @@
-//¹¹Ôìº¯Êý3
-#include <bits/stdc++.h>
+//ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½3
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -7,7 +7,7 @@ int main()
   string temp="1010111100";
   bitset<10> bin(temp);
   for(int i=0; i<=9; i++)
-    cout<<bin[i];//´òÓ¡³ö0011110101£¬×¢Òâ£¬ÊÇ´Ó×óÏòÓÒÒÀ´ÎÌîÈëµÄ
+    cout<<bin[i];//ï¿½ï¿½Ó¡ï¿½ï¿½0011110101ï¿½ï¿½×¢ï¿½â£¬ï¿½Ç´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   return 0;
 }
 

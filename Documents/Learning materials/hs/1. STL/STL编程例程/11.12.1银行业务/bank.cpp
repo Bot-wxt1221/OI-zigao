@@ -1,5 +1,5 @@
-//银行业务
-#include <bits/stdc++.h>//使用万能头文件，无需写#include <map> 
+//锟斤拷锟斤拷业锟斤拷
+#include<bits/stdc++.h>//使锟斤拷锟斤拷锟斤拷头#include写#include <map> 
 using namespace std;
 
 multimap<int, int>G;
@@ -17,7 +17,7 @@ int main()
     {
       int k, p;
       scanf("%d%d", &k, &p);
-      G.insert(make_pair(p, k));//插入客户，multimap自动按p的值排序
+      G.insert(make_pair(p, k));//锟斤拷锟斤拷突锟斤拷锟絤ultimap锟皆讹拷锟斤拷p锟斤拷值锟斤拷锟斤拷
     }
     if (Request == 3)
     {
@@ -26,7 +26,7 @@ int main()
         printf("0\n");
       else
       {
-        printf("%d\n", it -> second);//输出最低优先级客户
+        printf("%d\n", it -> second);//锟斤拷锟斤拷锟斤拷锟斤拷锟饺硷拷锟酵伙拷
         G.erase(it);
       }
     }
@@ -38,7 +38,7 @@ int main()
       else
       {
         --it;
-        printf("%d\n", it -> second);//输出最高优先级客户
+        printf("%d\n", it -> second);//锟斤拷锟斤拷锟斤拷锟斤拷锟饺硷拷锟酵伙拷
         G.erase(it);
       }
     }

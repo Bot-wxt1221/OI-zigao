@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 #define file
 //#define int long long
 

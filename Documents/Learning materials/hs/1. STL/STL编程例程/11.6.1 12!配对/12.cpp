@@ -1,5 +1,5 @@
-//12!Åä¶Ô
-#include <bits/stdc++.h>//Ê¹ÓÃÁËÍòÄÜÍ·ÎÄ¼ş£¬¹ÊÎŞĞèĞ´#include <set> 
+//12!ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>//Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½#includeï¿½ï¿½ï¿½Ğ´#include <set> 
 using namespace std;
 
 int main()
@@ -7,21 +7,21 @@ int main()
   freopen("12.in","r",stdin);
   freopen("12.out","w",stdout);
   int N,n,num=0,f12=479001600;
-  multiset<unsigned int>s;//¶àÖØ¼¯ºÏ£¬ÔÊĞíÖµÖØ¸´
+  multiset<unsigned int>s;//ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½Ø¸ï¿½
   cin>>N;
   for(int i=1; i<=N; i++)
   {
     cin>>n;
-    if(f12%n==0)//Èç¹ûnÊÇf12µÄÔ¼Êı
+    if(f12%n==0)//ï¿½ï¿½ï¿½nï¿½ï¿½f12ï¿½ï¿½Ô¼ï¿½ï¿½
     {
-      multiset<unsigned int>::iterator it=s.find(f12/n);//ÕÒnµÄÒò×Ó
+      multiset<unsigned int>::iterator it=s.find(f12/n);//ï¿½ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       if(it!=s.end())
       {
         ++num;
-        s.erase(it);//¶àÖØ¼¯ºÏÖĞÉ¾³ı¸ÃÒò×Ó
+        s.erase(it);//ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       }
       else
-        s.insert(n);//²åÈëµ½¶àÖØ¼¯ºÏÖĞ
+        s.insert(n);//ï¿½ï¿½ï¿½ëµ½ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½
     }
   }
   printf("%d\n",num);

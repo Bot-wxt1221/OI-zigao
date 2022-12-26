@@ -1,6 +1,6 @@
-#include <cstdio>
-#include <iostream>
-#include <algorithm>
+#include<cstdio>
+#include<iostream>
+#include<algorithm>
 #define file
 #define INPUT_DATA_TYPE  long long
 #define OUTPUT_DATA_TYPE  long long

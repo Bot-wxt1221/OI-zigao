@@ -1,5 +1,5 @@
-//stable_sortÀı³Ì
-#include <bits/stdc++.h>//Ê¹ÓÃÍòÄÜÍ·ÎÄ¼ş£¬ÎŞĞèĞ´#include <algorithm> 
+//stable_sortï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>//Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·#includeĞ´#include <algorithm> 
 using namespace std;
 
 struct stu
@@ -35,10 +35,10 @@ int main()
   master.name = "qiangYi";
   master.score=88;
   v.push_back(master);
-  stable_sort(v.begin(),v.end(),comByscore);//°´·ÖÊıÅÅĞò
+  stable_sort(v.begin(),v.end(),comByscore);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   for(int i=0; i<v.size(); i++)
     cout<<v[i].id<<' '<<v[i].name<<' '<<v[i].score<<endl;
-  stable_sort(v.begin(),v.end(),comByid);//°´Ñ§ºÅÄæÅÅĞò
+  stable_sort(v.begin(),v.end(),comByid);//ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   for(int i=0; i<v.size(); i++)
     cout<<v[i].id<<' '<<v[i].name<<' '<<v[i].score<<endl;
   return 0;

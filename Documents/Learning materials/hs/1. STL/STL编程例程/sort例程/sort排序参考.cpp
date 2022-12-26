@@ -1,15 +1,15 @@
-//sortеепР╡н©╪
-#include <bits/stdc++.h>//й╧сцмРдэм╥нд╪Чё╛╧йнчпХп╢#include <algorithm>╨м#include <functional> 
-//#include <functional>
-//functionalлА╧╘акхГоб╣д╩Ысздё╟Е╣д╠х╫о╨╞йЩ╤тоС║ё
-//equal_to<Type>ё╨╣хсз║ё
-//not_equal_to<Type>ё╨╡╩╣хсз║ё
-//greater<Type>ё╨╢Ссз║ё
-//greater_equal<Type>ё╨╢Ссз╣хсз║ё
-//less<Type>ё╨п║сз║ё
-//less_equal<Type>ё╨п║сз╣хсз║ё
-//#include <algorithm>
-//#include <iostream>
+//sortО©╫О©╫О©╫О©╫н©О©╫
+#include<bits/stdc++.h>//й╧О©╫О©╫О©╫О©╫О©╫О©╫м╥О©╫#includeО©╫п╢#in#includegorithm>О©╫О©╫#include <functional> 
+//#include<functional>
+//functionalО©╫А╧╘О©╫О©╫О©╫О©╫О©╫б╣д╩О©╫О©╫О©╫дёО©╫О©╫д╠х╫о╨О©╫О©╫О©╫О©╫О©╫О©╫О©╫
+//equal_to<Type>О©╫О©╫О©╫О©╫О©╫з║О©╫
+//not_equal_to<Type>О©╫О©╫О©╫О©╫О©╫О©╫О©╫з║О©╫
+//greater<Type>О©╫О©╫О©╫О©╫О©╫з║О©╫
+//greater_equal<Type>О©╫О©╫О©╫О©╫О©╫з╣О©╫О©╫з║О©╫
+//less<Type>О©╫О©╫п║О©╫з║О©╫
+//less_equal<Type>О©╫О©╫п║О©╫з╣О©╫О©╫з║О©╫
+//#include<algorithm>
+//#include<iostream>
 using namespace std;
 
 void print(int a[],int n)
@@ -23,14 +23,14 @@ int main()
 {
   int a[]= {-1,9,-34,100,45,2,98,32};
   const int len=sizeof(a)/sizeof(int);
-  sort(a,a+len);//сип║╣╫╢СеепР
-  //sort(a,a+len,less<int>());//уБр╡©иртй╣ожсип║╣╫╢СеепР
+  sort(a,a+len);//О©╫О©╫п║О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
+  //sort(a,a+len,less<int>());//О©╫О©╫р╡О©╫О©╫О©╫О©╫й╣О©╫О©╫О©╫О©╫п║О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
   print(a,len);
 
-  sort(a,a+len,greater<int>());//си╢С╣╫п║еепР
+  sort(a,a+len,greater<int>());//О©╫и╢О©╫п║О©╫О©╫О©╫О©╫
   print(a,len);
   
-  sort(a,a+len,less<int>());//сип║╣╫╢СеепР
+  sort(a,a+len,less<int>());//О©╫О©╫п║О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
   print(a,len);
   return 0;
 }

@@ -1,25 +1,25 @@
-//mapÀı³Ì3
-#include <bits/stdc++.h>//Ê¹ÓÃÍòÄÜÍ·ÎÄ¼ş£¬ÎŞĞèĞ´#include <map> 
+//mapï¿½ï¿½ï¿½ï¿½3
+#include<bits/stdc++.h>//Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·#includeĞ´#include <map> 
 using namespace std;
 
 int main()
 {
   map<int, string> ms;
   ms[1] = "student_one";
-  ms[1] = "student_two";//idÏàÍ¬£¬ÔòºöÂÔ
+  ms[1] = "student_two";//idï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   ms[2] = "student_three";
   pair<map<int,string>::iterator,bool>pa;
   pa=ms.insert(pair<int, string>(2, "student_one"));
-  if(!pa.second)//idÏàÍ¬£¬Ôò²åÈëÊ§°Ü
+  if(!pa.second)//idï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
     cout<<"error"<<endl;
   ms.insert(pair<int, string>(5, "student_two"));
   ms.insert(pair<int, string>(6, "student_three"));
   map<int, string>::iterator iter;
   for(iter = ms.begin(); iter != ms.end(); iter++)
     cout<<iter->first<<" "<<iter->second<<endl;
-  //ËÑË÷Ñ§ºÅÎª2µÄ¼ÇÂ¼²¢´òÓ¡
+  //ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½Îª2ï¿½Ä¼ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Ó¡
   map<int,string>::iterator ii=ms.find(2);
-  cout<<"Ñ§ºÅÎª"<<(*ii).first<<' '<<(*ii).second<<endl;
+  cout<<"Ñ§ï¿½ï¿½Îª"<<(*ii).first<<' '<<(*ii).second<<endl;
   return 0;
 }
 

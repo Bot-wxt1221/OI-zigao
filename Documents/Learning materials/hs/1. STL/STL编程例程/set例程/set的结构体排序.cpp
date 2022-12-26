@@ -1,15 +1,15 @@
-//setµÄ½á¹¹ÌåÅÅÐò
-#include <bits/stdc++.h>
+//setï¿½Ä½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 
 struct Info
 {
   string name;
   double score;
-  bool operator < (const Info &a) const //ÖØÔØ"<"²Ù×÷·û,ÕÕ³­¼´¿É
+  bool operator < (const Info &a) const //ï¿½ï¿½ï¿½ï¿½"<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½Õ³ï¿½ï¿½ï¿½ï¿½ï¿½
   {
-    return a.score <score;      //´Ó´óµ½Ð¡ÅÅÐò
-    //return a.score >score;  //´ÓÐ¡µ½´óÅÅÐò
+    return a.score <score;      //ï¿½Ó´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
+    //return a.score >score;  //ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   }
 } info;
 
@@ -24,7 +24,7 @@ int main()
   s.insert(info);
 
   set<Info>::iterator ii;
-  for(ii=s.begin(); ii!=s.end(); ii++)//±éÀú
+  for(ii=s.begin(); ii!=s.end(); ii++)//ï¿½ï¿½ï¿½ï¿½
     cout<<(*ii).name<<' '<<(*ii).score<<endl;
   return 0;
 }

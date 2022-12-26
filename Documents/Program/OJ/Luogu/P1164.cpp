@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 #define maxn (100+10)
 #define maxm (10000+10)
 

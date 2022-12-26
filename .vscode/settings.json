@@ -78,6 +78,6 @@
         "climits": "cpp",
         "queue": "cpp"
     },
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     "editor.acceptSuggestionOnEnter": "off"
 }

@@ -1,18 +1,18 @@
-#include <cstdio>
-#include <algorithm>
-#include <cstring>
-#include <queue>
-#include <vector>
+#include<cstdio>
+#include<algorithm>
+#include<cstring>
+#include<queue>
+#include<vector>
 using namespace std;
 const int maxn = 500 + 10;
 int W, H, N;
 int X1[maxn], X2[maxn], Y1[maxn], Y2[maxn]; int dx[4] = {1, 0, -1, 0};
 int dy[4] = {0, 1, 0, -1};
 
-//Ìî³äÓÃ
+//ï¿½ï¿½ï¿½ï¿½ï¿½
 bool fld[maxn * 6][maxn * 6];
 
-//¶Ôx1, x2½øÐÐ×ø±êÀëÉ¢»¯£¬²¢·µ»ØÀëÉ¢»¯Ö®ºóµÄ¿í¶È
+//ï¿½ï¿½x1, x2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¢ï¿½ï¿½Ö®ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½
 int compress(int *x1, int *x2, int w)
 {
 	vector<int> xs;
@@ -38,11 +38,11 @@ int compress(int *x1, int *x2, int w)
 
 void solve()
 {
-	//×ø±êÀëÉ¢»¯
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¢ï¿½ï¿½
     W = compress(X1, X2, W);
     H = compress(Y1, Y2, H);
     
-    //Ìî³äÓÐÖ±ÏßµÄ²¿·Ö
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ßµÄ²ï¿½ï¿½ï¿½
     memset(fld, 0, sizeof(fld));     
 	for (int i = 0; i < N; i++){
 		for (int y = Y1[i]; y <= Y2[i]; y++){
@@ -52,7 +52,7 @@ void solve()
 		}
 	}
 	
-	//ÇóÇøÓòµÄ¸öÊý
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½
     int ans = 0;
     for (int y = 0; y < H; y++){
     	for (int x = 0; x < W; x++){
@@ -60,7 +60,7 @@ void solve()
 				continue;
 			ans++;
 			
-			//¿í¶ÈÓÅÏÈËÑË÷
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			queue<pair<int, int> > que; 
 			que.push(make_pair(x, y));
 			while (!que.empty()){

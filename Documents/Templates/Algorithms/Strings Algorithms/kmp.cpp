@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <cstring>
+#include<cstdio>
+#include<cstring>
 //#define file
 
 const int STRING_LENGTH=1000010;

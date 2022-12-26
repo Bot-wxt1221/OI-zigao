@@ -1,5 +1,5 @@
-//½á¹¹ÌålistÀı³Ì
-#include <bits/stdc++.h>
+//ï¿½á¹¹ï¿½ï¿½listï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>
 using namespace std;
 
 struct student
@@ -13,21 +13,21 @@ int main()
 {
   student s[]=
   {
-    {"ÕÅÈı",18,"Õã½­"},
-    {"ÀîËÄ",19,"±±¾©"},
-    {"Íõ¶ş",18,"ÉÏº£"}
+    {"ï¿½ï¿½ï¿½ï¿½",18,"ï¿½ã½­"},
+    {"ï¿½ï¿½ï¿½ï¿½",19,"ï¿½ï¿½ï¿½ï¿½"},
+    {"ï¿½ï¿½ï¿½ï¿½",18,"ï¿½Ïºï¿½"}
   };
   list<student>l;
-  l.push_back(s[0]);//²åÈëÔªËØ
+  l.push_back(s[0]);//ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
   l.push_back(s[1]);
   l.push_back(s[2]);
-  student x= {"ÁõËÄ",19,"ĞÂ½®"};
-  l.push_front(x);//²åÈëµ½Ê×Î»£¬¸´ÔÓ¶ÈÎªO(1)
-  l.insert(l.begin(),x);//²åÈëÈÎÒâÎ»ÖÃ,Ê±¼ä¸´ÔÓ¶ÈO(1)
-  //l.pop_front();//É¾³ıÊ×ÔªËØ
-  //l.pop_back();//É¾³ıÎ²ÔªËØ
+  student x= {"ï¿½ï¿½ï¿½ï¿½",19,"ï¿½Â½ï¿½"};
+  l.push_front(x);//ï¿½ï¿½ï¿½ëµ½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½Ó¶ï¿½ÎªO(1)
+  l.insert(l.begin(),x);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½,Ê±ï¿½ä¸´ï¿½Ó¶ï¿½O(1)
+  //l.pop_front();//É¾ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+  //l.pop_back();//É¾ï¿½ï¿½Î²Ôªï¿½ï¿½
   l.erase(l.begin());
-  //l.erase(l.begin(),l.end());//É¾³ıÇø¼äµÄÔªËØ
+  //l.erase(l.begin(),l.end());//É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
   for(list<student>::iterator i=l.begin(); i!=l.end(); i++)
     cout<<(*i).name<<"  "<<(*i).age<<"  "<<(*i).city<<"\n";
   return 0;

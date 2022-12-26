@@ -1,5 +1,5 @@
-//find_first_of例程
-#include <bits/stdc++.h>//使用万能头文件，无需写#include <algorithm> 
+//find_first_of锟斤拷锟斤拷
+#include<bits/stdc++.h>//使锟斤拷锟斤拷锟斤拷头#include写#include <algorithm> 
 using namespace std;
 
 int main()
@@ -7,7 +7,7 @@ int main()
   char *s1="abcdefu7ghijklmn";
   char *s2="zyx3yu7ys";
   char * i=find_first_of(s1,s1+strlen(s1),s2,s2+strlen(s2));
-  cout<<"s1第一个出现在s2的字符为"<<*i<<endl;//输出u
+  cout<<"s1锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷s2锟斤拷锟街凤拷为"<<*i<<endl;//锟斤拷锟絬
   return 0;
 }
 

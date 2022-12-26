@@ -1,5 +1,5 @@
-//�ַ�ջ
-#include <bits/stdc++.h>
+//�ַ�ջ
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()

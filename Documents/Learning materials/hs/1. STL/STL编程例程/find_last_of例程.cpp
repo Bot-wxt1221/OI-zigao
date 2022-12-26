@@ -1,12 +1,12 @@
-//find_last_ofÀı³Ì
-#include <bits/stdc++.h>//Ê¹ÓÃÍòÄÜÍ·ÎÄ¼ş£¬ÎŞĞèĞ´#include <algorithm> 
+//find_last_ofï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>//Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·#includeĞ´#include <algorithm> 
 using namespace std;
 
 int main()
 {
   string str = "Mississippi";
   int index;
-  index = str.find_last_of('s');//Êä³ö6
+  index = str.find_last_of('s');//ï¿½ï¿½ï¿½6
   cout<<index<<endl;
   return 0;
 }

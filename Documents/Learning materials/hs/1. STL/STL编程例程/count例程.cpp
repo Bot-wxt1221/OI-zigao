@@ -1,5 +1,5 @@
-//count例程
-#include <bits/stdc++.h>//使用万能头文件，无需写#include <algorithm> 
+//count锟斤拷锟斤拷
+#include<bits/stdc++.h>//使锟斤拷锟斤拷锟斤拷头#include写#include <algorithm> 
 using namespace std;
 
 int main()
@@ -7,7 +7,7 @@ int main()
   vector<int> l;
   for(int i=0; i<100; i++)
     l.push_back(i%20);
-  int num=count(l.begin(),l.end(),9);//统计等于9的元素个数
+  int num=count(l.begin(),l.end(),9);//统锟狡碉拷锟斤拷9锟斤拷元锟截革拷锟斤拷
   cout<<num<<endl;
   return 0;
 }

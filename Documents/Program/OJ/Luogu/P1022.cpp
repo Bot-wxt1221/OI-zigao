@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 int main(){
     char c,a,outc=0;
     int num=0,numa=0,now=0,f=1;

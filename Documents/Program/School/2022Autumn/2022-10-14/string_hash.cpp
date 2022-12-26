@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <cstring>
+#include<cstdio>
+#include<cstring>
 //#define file
 
 unsigned long long hash1[1000010],hash2[1000010],base1[1000010],base2[1000010];

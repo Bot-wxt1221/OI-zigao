@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <algorithm>
+#include<cstdio>
+#include<algorithm>
 // #define file
 #define INPUT_DATA_TYPE long long
 #define OUTPUT_DATA_TYPE int

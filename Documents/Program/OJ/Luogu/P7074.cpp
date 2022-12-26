@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <algorithm>
+#include<cstdio>
+#include<algorithm>
 #define maxn (1000+10)
 int read();
 int map[maxn][maxn],ans[maxn][maxn];

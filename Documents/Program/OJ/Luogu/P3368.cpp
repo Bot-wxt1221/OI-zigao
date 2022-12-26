@@ -1,8 +1,8 @@
-#include <cstdio>
+#include<cstdio>
 // #define file
 
 //************************************************************************************************
-#include <cstring>
+#include<cstring>
 #define BIT_TYPE long long
 const int BIT_SIZE=500000+10;
 struct BIT{

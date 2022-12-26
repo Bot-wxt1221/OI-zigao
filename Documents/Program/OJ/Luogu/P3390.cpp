@@ -1,11 +1,11 @@
 //************************************************************************************************
-#include <algorithm>
-#include <cassert>
-#include <complex>
-#include <cstring>
-#include <memory>
-#include <string>
-#include <vector>
+#include<algorithm>
+#include<cassert>
+#include<complex>
+#include<cstring>
+#include<memory>
+#include<string>
+#include<vector>
 using namespace std;template <class T>
 struct is_iterator{template <class U, typename enable_if<!is_convertible<U, const char *>::value, int>::type = 0>
     constexpr static auto has_indirection(int) -> decltype(*declval<U>(), bool()) {return true;}
@@ -262,7 +262,7 @@ template <class... Ts>
 int writeln(Ts &&...args) {return write(forward<Ts>(args)..., '\n');}
 void flush() {output->flush();}
 //************************************************************************************************
-#include <cstring>
+#include<cstring>
 #define MATRIX_MOD %1000000007
 #define MATRIX_TYPE long long
 const int MATRIX_MAX_N=100;

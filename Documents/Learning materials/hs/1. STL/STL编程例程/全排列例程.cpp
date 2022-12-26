@@ -1,5 +1,5 @@
-//х╚ееапюЩЁл
-#include <bits/stdc++.h>//й╧сцмРдэм╥нд╪Чё╛нчпХп╢#include <algorithm> 
+//х╚О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
+#include<bits/stdc++.h>//й╧О©╫О©╫О©╫О©╫О©╫О©╫м╥#includeп╢#include <algorithm> 
 using namespace std;
 
 void print(int a[])
@@ -12,11 +12,11 @@ void print(int a[])
 int main()
 {
   int a[]= {3,5,6,7,9};
-  //╡ЗиЗкЫспобр╩вИ╨оё╛й╠╪Д╦╢тс╤хн╙n!,кы╤х╫обЩ
-  while(next_permutation(a,a+5))//обр╩вИ╨о
+  //О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫р╩О©╫О©╫оёО©╫й╠О©╫Д╦╢О©╫с╤О©╫н╙n!,О©╫ы╤х╫О©╫О©╫О©╫
+  while(next_permutation(a,a+5))//О©╫О©╫р╩О©╫О©╫О©╫
     print(a);
   cout<<endl;
-  while(prev_permutation(a,a+5))//иор╩вИ╨о
+  while(prev_permutation(a,a+5))//О©╫О©╫р╩О©╫О©╫О©╫
     print(a);
   return 0;
 }

@@ -1,5 +1,5 @@
-//漂亮的数字
-#include <bits/stdc++.h>//使用万能头文件，无需写#include <map> 
+//漂锟斤拷锟斤拷锟斤拷锟斤拷
+#include<bits/stdc++.h>//使锟斤拷锟斤拷锟斤拷头#include写#include <map> 
 using namespace std;
 
 map<int,int>m;

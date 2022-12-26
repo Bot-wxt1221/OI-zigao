@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 
 #define max_n 10000+10
 

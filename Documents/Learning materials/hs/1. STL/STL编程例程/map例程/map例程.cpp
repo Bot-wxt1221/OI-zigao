@@ -1,29 +1,29 @@
-//mapÀı³Ì2
-#include <bits/stdc++.h>
+//mapï¿½ï¿½ï¿½ï¿½2
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
 {
   map<int, string> ms;
   ms[1] = "student_one";
-  ms[1] = "student_two";        //idÏàÍ¬£¬Ôò¸²¸Ç
+  ms[1] = "student_two";        //idï¿½ï¿½Í¬ï¿½ï¿½ï¿½ò¸²¸ï¿½
   ms[2] = "student_three";
   map<int, string>::iterator iter;
-  ms.insert(make_pair(3,"student_four"));//²åÈëĞÂÔªËØ
+  ms.insert(make_pair(3,"student_four"));//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
   for(iter = ms.begin(); iter != ms.end(); iter++)
     cout<<iter->first<<" "<<iter->second<<endl;
   cout<<endl;
-  iter=ms.lower_bound(1);       //Ê×¸ö´óÓÚµÈÓÚ1µÄÔªËØ
+  iter=ms.lower_bound(1);       //ï¿½×¸ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½1ï¿½ï¿½Ôªï¿½ï¿½
   cout<<iter->second<<endl;
-  iter=ms.upper_bound(1);       //Ê×¸ö´óÓÚ1µÄÔªËØ
+  iter=ms.upper_bound(1);       //ï¿½×¸ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ôªï¿½ï¿½
   cout<<iter->second<<endl;
-  iter = ms.find(1);            //²éÕÒ¼üÖµÎª1µÄÔªËØÎ»ÖÃ
-  ms.erase(iter);               //É¾³ı¼üÖµÎª1µÄÔªËØ
+  iter = ms.find(1);            //ï¿½ï¿½ï¿½Ò¼ï¿½ÖµÎª1ï¿½ï¿½Ôªï¿½ï¿½Î»ï¿½ï¿½
+  ms.erase(iter);               //É¾ï¿½ï¿½ï¿½ï¿½ÖµÎª1ï¿½ï¿½Ôªï¿½ï¿½
   for(iter = ms.begin(); iter != ms.end(); iter++)
     cout<<iter->first<<" "<<iter->second<<endl;
-  ms.erase(ms.begin(),ms.end());//É¾³ıÈ«²¿ÔªËØ
+  ms.erase(ms.begin(),ms.end());//É¾ï¿½ï¿½È«ï¿½ï¿½Ôªï¿½ï¿½
   cout<<ms.size()<<endl;
-  cout<<ms.empty()<<endl;       //empty()ÅĞ¶ÏmapÊÇ·ñÎª¿Õ
+  cout<<ms.empty()<<endl;       //empty()ï¿½Ğ¶ï¿½mapï¿½Ç·ï¿½Îªï¿½ï¿½
   return 0;
 }
 

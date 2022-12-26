@@ -12,8 +12,8 @@
  * @LastEditors: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
-#include <algorithm>
+#include<cstdio>
+#include<algorithm>
 using namespace std;
 int n,cows;
 int a[100100]={0};

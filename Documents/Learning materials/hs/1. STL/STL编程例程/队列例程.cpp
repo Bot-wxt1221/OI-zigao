@@ -1,19 +1,19 @@
-//¶ÓÁĞÀı³Ì
-#include <bits/stdc++.h>//Ê¹ÓÃÍòÄÜÍ·ÎÄ¼ş£¬ÎŞĞèĞ´#include <queue> 
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#include<bits/stdc++.h>//Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·#includeĞ´#include <queue> 
 using namespace std;
 
 int main()
 {
   queue<int> q;
-  q.push(3);//Èë¶Ó
+  q.push(3);//ï¿½ï¿½ï¿½
   q.push(5);
   q.push(2);
-  cout<<"ÔªËØ¸öÊıÎª£º"<<q.size()<<endl;
-  cout<<q.back();//È¡¶ÓÎ²ÔªËØ
-  while(!q.empty())//µ±¶ÓÁĞÎ´¿Õ
+  cout<<"Ôªï¿½Ø¸ï¿½ï¿½ï¿½Îªï¿½ï¿½"<<q.size()<<endl;
+  cout<<q.back();//È¡ï¿½ï¿½Î²Ôªï¿½ï¿½
+  while(!q.empty())//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½
   {
-    cout<<q.front()<<endl;//´òÓ¡¶ÓÊ×ÔªËØ
-    q.pop();//³ö¶Ó
+    cout<<q.front()<<endl;//ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+    q.pop();//ï¿½ï¿½ï¿½ï¿½
   }
   return 0;
 }

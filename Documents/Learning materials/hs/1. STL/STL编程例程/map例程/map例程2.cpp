@@ -1,12 +1,12 @@
-//mapÀı³Ì2
-#include <bits/stdc++.h>
+//mapï¿½ï¿½ï¿½ï¿½2
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
 {
   map<int, string> ms;
   ms[1] = "student_one";
-  ms[1] = "student_two";                      //idÏàÍ¬£¬Ôò¸²¸Ç
+  ms[1] = "student_two";                      //idï¿½ï¿½Í¬ï¿½ï¿½ï¿½ò¸²¸ï¿½
   ms[2] = "student_three";
   map<int, string>::iterator iter;
   for(iter = ms.begin(); iter != ms.end(); iter++)

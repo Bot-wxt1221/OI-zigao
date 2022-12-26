@@ -1,4 +1,4 @@
-#include <cstdio>
+#include<cstdio>
 #define mn(a,b) ((a)<(b)?(a):(b))
 
 int read();

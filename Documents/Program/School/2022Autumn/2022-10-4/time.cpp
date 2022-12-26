@@ -1,5 +1,5 @@
-#include <ctime>
-#include <cstdio>
+#include<ctime>
+#include<cstdio>
 #define MAX1 100000000
 #define MAX2 2147483647
 

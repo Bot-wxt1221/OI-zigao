@@ -1,5 +1,5 @@
-#include <cstdio>
-#include <algorithm>
+#include<cstdio>
+#include<algorithm>
 
 const int maxN = 505, maxM = 205;
 
@@ -10,12 +10,12 @@ int main() {
 	freopen("bus.out","w",stdout);
     scanf("%d%d", &n, &m); mm = m + m;
     for (int i = 1; i <= n; i++) { scanf("%d", &t[i]); }
-    std::sort(t + 1, t + n + 1); // ÅÅÐò. 
+    std::sort(t + 1, t + n + 1); // ï¿½ï¿½ï¿½ï¿½. 
     for (int i = 1; i <= n; i++) {
-    	g[i][0] = 1e9; // ÏÈÌØÅÐ j = 0 µÄÇé¿ö. 
+    	g[i][0] = 1e9; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ j = 0 ï¿½ï¿½ï¿½ï¿½ï¿½. 
     	for (int j = 0; j <= std::min(t[i] - t[i - 1] - m, m - 1); j++) { g[i][0] = std::min(g[i][0], g[i - 1][j]); }
-    	for (int j = 1; j < mm; j++) { g[i][j] = std::min(g[i][j - 1], t[i] + j - t[i - 1] - m >= 0 && t[i] + j - t[i - 1] - m < mm ? g[i - 1][t[i] + j - t[i - 1] - m] : (int) 1e9); } // Ç°×º×î´óÖµÎ¬»¤ÐÂ¿ªÒ»¶ÎµÄÇé¿ö. 
-    	for (int j = 0; j < mm; j++) { g[i][j] = std::min(g[i][j], t[i] + j - t[i - 1] < mm ? g[i - 1][t[i] + j - t[i - 1]] : (int) 1e9) + j; } // ·ÖÔÚÍ¬Ò»¶ÎÄÚµÄÇé¿ö, ¼ÓÉÏ j µÄ¹±Ï×. 
+    	for (int j = 1; j < mm; j++) { g[i][j] = std::min(g[i][j - 1], t[i] + j - t[i - 1] - m >= 0 && t[i] + j - t[i - 1] - m < mm ? g[i - 1][t[i] + j - t[i - 1] - m] : (int) 1e9); } // Ç°×ºï¿½ï¿½ï¿½ÖµÎ¬ï¿½ï¿½ï¿½Â¿ï¿½Ò»ï¿½Îµï¿½ï¿½ï¿½ï¿½. 
+    	for (int j = 0; j < mm; j++) { g[i][j] = std::min(g[i][j], t[i] + j - t[i - 1] < mm ? g[i - 1][t[i] + j - t[i - 1]] : (int) 1e9) + j; } // ï¿½ï¿½ï¿½ï¿½Í¬Ò»ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ j ï¿½Ä¹ï¿½ï¿½ï¿½. 
     }
     for (int i = 0; i < m; i++) { ans = std::min(ans, g[n][i]); }
     printf("%d\n", ans);

@@ -1,6 +1,6 @@
-//#include <bits/stdc++.h>
-#include <cstdio>
-#include <iostream>
+//#include<bits/stdc++.h>
+#include<cstdio>
+#include<iostream>
 using namespace std;
 
 int fa[1000050];

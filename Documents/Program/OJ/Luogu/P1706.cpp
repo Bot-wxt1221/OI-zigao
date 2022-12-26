@@ -12,7 +12,7 @@
  * @LastEditors: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
+#include<cstdio>
 int a[100];
 int n;
 int book[100];

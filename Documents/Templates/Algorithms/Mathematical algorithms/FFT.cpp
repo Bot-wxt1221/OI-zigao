@@ -1,12 +1,12 @@
-#include <cstdio>
+#include<cstdio>
 
 // #define file
 #define INPUT_DATA_TYPE int
 #define OUTPUT_DATA_TYPE int
 
 //************************************************************************************************
-#include <cstring>
-#include <complex>
+#include<cstring>
+#include<complex>
 #define POL_SIZE (4000000+10)
 
 const double pi=acos(-1);
@@ -78,8 +78,8 @@ int ans[POL_SIZE];
 
 int main(){
 	#ifdef file
-	freopen("c:\\Users\\Administrator\\Downloads\\P1919_1.in", "r", stdin);
-	freopen("c:\\Users\\Administrator\\Desktop\\OI\\Documents\\Templates\\Algorithms\\Mathematical algorithms\\out", "w", stdout);
+	freopen("name.in", "r", stdin);
+	freopen("name.out", "w", stdout);
 	#endif
 
     scanf("%s %s",s1,s2);

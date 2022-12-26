@@ -5,8 +5,8 @@
  * @LastEditors: Zi_Gao
  * @Description: 
  */
-#include <cstdio>
-#include <cmath>
+#include<cstdio>
+#include<cmath>
 bool primeNumberDetermination(int num){
     int iMAX=sqrt(num);
     for(int i=2;i<=iMAX;i++){

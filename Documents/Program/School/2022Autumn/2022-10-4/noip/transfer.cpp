@@ -1,6 +1,6 @@
-#include <cstdio>
-#include <deque>
-#include <set>
+#include<cstdio>
+#include<deque>
+#include<set>
 #define file
 
 std::deque< std::pair<int,int> > q;//p t

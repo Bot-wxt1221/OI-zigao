@@ -1,5 +1,5 @@
-#include <iostream>
-#include <algorithm>
+#include<iostream>
+#include<algorithm>
 using namespace std;
 struct student{	
     int id,y,s,e,sc; 
@@ -18,7 +18,7 @@ int main() {
 		stu[i].id=i+1;cin>>stu[i].y>>stu[i].s>>stu[i].e;
 		stu[i].sc=stu[i].y+stu[i].s+stu[i].e;
 	}
-	stable_sort(stu,stu+n,cmp);//¶ÔÑ§Éú½øÐÐ³É¼¨½µÐòÅÅÐò
+	stable_sort(stu,stu+n,cmp);//ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½Ð³É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	for(int i=0;i<5;i++)cout<<stu[i].id<<" "<<stu[i].sc<<endl; 
 	return 0;
 }
